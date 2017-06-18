@@ -5,9 +5,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.yhkj.yhsx.forestpolicemobileterminal.R;
@@ -26,16 +23,15 @@ import java.util.List;
 import butterknife.BindView;
 
 /**
- * 社会情况统计
+ * 李伟 2017.6.18
+ * 信息采集--基础台账--社会情况统计--社会情况添加
  */
 public class SocialStatisticsActivity extends ParentActivity implements View.OnClickListener {
-
-    @BindView(R.id.ivAlarm)
-    ImageView ivAlarm;
+    /**
+     * 保存
+     */
     @BindView(R.id.tv_save)
     TextView tvSave;
-    @BindView(R.id.mytitle)
-    RelativeLayout mytitle;
     /**
      * 户数
      */
@@ -61,6 +57,7 @@ public class SocialStatisticsActivity extends ParentActivity implements View.OnC
      */
     @BindView(R.id.btn_attachment)
     Button btnAttachment;
+
     @BindView(R.id.view1)
     View view1;
     @BindView(R.id.view2)
@@ -71,10 +68,9 @@ public class SocialStatisticsActivity extends ParentActivity implements View.OnC
     View view4;
     @BindView(R.id.view5)
     View view5;
+
     @BindView(R.id.viewPager)
     ViewPager viewPager;
-    @BindView(R.id.social_pager)
-    LinearLayout socialPager;
     private List<Fragment> pageViews;
     @Override
     protected int layoutResID() {

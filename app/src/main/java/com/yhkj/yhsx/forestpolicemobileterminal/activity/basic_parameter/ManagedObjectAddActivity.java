@@ -5,9 +5,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.yhkj.yhsx.forestpolicemobileterminal.R;
@@ -23,17 +20,16 @@ import java.util.List;
 import butterknife.BindView;
 
 /**
- * 重点列管人员添加
+ * 李伟 2017.6.18
+ * 信息采集--基础台账--重点列管人（单位）情况登记--新增重点列管人员
  */
 public class ManagedObjectAddActivity extends ParentActivity implements View.OnClickListener {
 
-
-    @BindView(R.id.ivAlarm)
-    ImageView ivAlarm;
+    /**
+     * 保存
+     */
     @BindView(R.id.tv_save)
     TextView tvSave;
-    @BindView(R.id.mytitle)
-    RelativeLayout mytitle;
     /**
      * 重点列管人员单位情况
      */
@@ -44,14 +40,14 @@ public class ManagedObjectAddActivity extends ParentActivity implements View.OnC
      */
     @BindView(R.id.btn_attachment)
     Button btnAttachment;
+
     @BindView(R.id.view1)
     View view1;
     @BindView(R.id.view2)
     View view2;
+
     @BindView(R.id.viewPager)
     ViewPager viewPager;
-    @BindView(R.id.managed_object_pager)
-    LinearLayout managedObjectPager;
 
     private List<Fragment> pageViews;
     @Override

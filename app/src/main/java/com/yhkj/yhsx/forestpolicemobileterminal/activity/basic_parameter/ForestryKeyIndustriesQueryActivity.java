@@ -14,7 +14,8 @@ import com.yhkj.yhsx.forestpolicemobileterminal.utils.ToastUtility;
 import butterknife.BindView;
 
 /**
- * 涉林重点行业登记情况
+ * 李伟 2017.6.18
+ * 信息采集--基础台账--涉林重点行业情况登记
  */
 public class ForestryKeyIndustriesQueryActivity extends ParentActivity implements View.OnClickListener {
 
@@ -25,6 +26,9 @@ public class ForestryKeyIndustriesQueryActivity extends ParentActivity implement
     @BindView(R.id.btn_add)
     ImageView btnAdd;
 
+    /**
+     * 涉林重点行业列表
+     */
     @BindView(R.id.lvForestryKeyIndustriesList)
     ListView lvForestryKeyIndustriesList;
 
@@ -37,13 +41,12 @@ public class ForestryKeyIndustriesQueryActivity extends ParentActivity implement
 
     @Override
     protected void initView() {
-        ct=this;
         btnAdd.setOnClickListener(this);
     }
 
     @Override
     protected void initData() {
-
+        ct=this;
     }
 
 

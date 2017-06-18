@@ -5,9 +5,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.yhkj.yhsx.forestpolicemobileterminal.R;
@@ -24,32 +21,37 @@ import butterknife.BindView;
 
 import static com.yhkj.yhsx.forestpolicemobileterminal.R.id.tv_save;
 
+
 /**
- * 辖区重点保护植物情况登记---添加
- *
- * @author Administrator
+ * 李伟 2017.6.18
+ * 信息采集--基础台账--重点保护植物登记--新增重点保护植物添加
  */
 public class PlantsProtectAddActivity extends ParentActivity implements View.OnClickListener {
 
-    @BindView(R.id.ivAlarm)
-    ImageView ivAlarm;
+
+    /**
+     * 保存
+     */
     @BindView(tv_save)
     TextView tvSave;
-    @BindView(R.id.mytitle)
-    RelativeLayout mytitle;
+    /**
+     * 基本信息
+     */
     @BindView(R.id.btn_basic)
     Button btnBasic;
+    /**
+     * 备注与附件
+     */
     @BindView(R.id.btn_attachment)
     Button btnAttachment;
+
     @BindView(R.id.view1)
     View view1;
     @BindView(R.id.view2)
     View view2;
+
     @BindView(R.id.viewPager)
     ViewPager viewPager;
-    @BindView(R.id.rkpp_pager)
-    LinearLayout rkppPager;
-
     private List<Fragment> pageViews;
 
 
@@ -62,6 +64,7 @@ public class PlantsProtectAddActivity extends ParentActivity implements View.OnC
     protected void initView() {
         btnBasic.setOnClickListener(this);
         btnAttachment.setOnClickListener(this);
+        tvSave.setOnClickListener(this);
     }
 
     private void setSelector(int id) {

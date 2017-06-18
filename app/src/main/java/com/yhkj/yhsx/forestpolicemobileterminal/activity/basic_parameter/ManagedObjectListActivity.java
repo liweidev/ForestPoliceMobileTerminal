@@ -5,11 +5,9 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.Spinner;
-import android.widget.TextView;
 
 import com.yhkj.yhsx.forestpolicemobileterminal.R;
 import com.yhkj.yhsx.forestpolicemobileterminal.activity.ParentActivity;
@@ -19,22 +17,26 @@ import com.yhkj.yhsx.forestpolicemobileterminal.utils.ToastUtility;
 import butterknife.BindView;
 
 /**
- * 基础台账--新增重点列管人员
+ * 李伟 2017.6.18
+ * 信息采集--基础台账--重点列管人（单位）情况登记
  */
 public class ManagedObjectListActivity extends ParentActivity implements View.OnClickListener {
 
 
-    @BindView(R.id.ivManagedObjectAdd)
-    ImageView ivManagedObjectAdd;
-    @BindView(R.id.tvManagedObjectAdd)
-    TextView tvManagedObjectAdd;
+
     /**
      * 添加重点列管人员
      */
     @BindView(R.id.llManagedObjectAdd)
     LinearLayout llManagedObjectAdd;
+    /**
+     * 姓名或单位名称
+     */
     @BindView(R.id.etManagedObjectSearchName)
     EditText etManagedObjectSearchName;
+    /**
+     * 选择列管原因
+     */
     @BindView(R.id.spManagedObjectCause)
     Spinner spManagedObjectCause;
     /**
@@ -42,6 +44,7 @@ public class ManagedObjectListActivity extends ParentActivity implements View.On
      */
     @BindView(R.id.btnManagedObjectSearch)
     Button btnManagedObjectSearch;
+
     @BindView(R.id.spManagedObjectSearch)
     Spinner spManagedObjectSearch;
     /**
@@ -49,8 +52,9 @@ public class ManagedObjectListActivity extends ParentActivity implements View.On
      */
     @BindView(R.id.btnManagedObjectSearchNearby)
     Button btnManagedObjectSearchNearby;
-    @BindView(R.id.linearLayout2)
-    LinearLayout linearLayout2;
+    /**
+     * 搜索结果列表
+     */
     @BindView(R.id.lvManagedObjectSearchResults)
     ListView lvManagedObjectSearchResults;
 

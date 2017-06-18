@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.ListView;
 
 import com.yhkj.yhsx.forestpolicemobileterminal.R;
@@ -15,19 +14,21 @@ import com.yhkj.yhsx.forestpolicemobileterminal.utils.ToastUtility;
 import butterknife.BindView;
 
 /**
- * 社会情况查询
+ * 李伟 2017.6.18
+ * 信息采集--基础台账--社会情况统计
  */
 public class SocialStatisticsListActivity extends ParentActivity implements View.OnClickListener {
 
-
-    @BindView(R.id.icon)
-    ImageView icon;
+    /**
+     * 添加
+     */
     @BindView(R.id.btn_add)
     ImageView btnAdd;
+    /**
+     * 社会情况信息列表
+     */
     @BindView(R.id.lvSocialStatistics_information)
     ListView lvSocialStatisticsInformation;
-    @BindView(R.id.container)
-    LinearLayout container;
 
     private Context context;
     @Override

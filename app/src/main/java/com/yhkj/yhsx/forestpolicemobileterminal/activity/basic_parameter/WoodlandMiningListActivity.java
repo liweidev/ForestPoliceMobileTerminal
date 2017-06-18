@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.ListView;
 
 import com.yhkj.yhsx.forestpolicemobileterminal.R;
@@ -14,17 +13,24 @@ import com.yhkj.yhsx.forestpolicemobileterminal.utils.ToastUtility;
 
 import butterknife.BindView;
 
+
 /**
- * 林地内开采沙、土、石、矿情况查新
+ * 李伟 2017.6.18
+ * 信息采集--基础台账--林地内开采沙、土、石、矿情况登记
  */
 public class WoodlandMiningListActivity extends ParentActivity implements View.OnClickListener {
 
+    /**
+     * 添加
+     */
     @BindView(R.id.btn_add)
     ImageView btnAdd;
+    /**
+     * 林地信息列表
+     */
     @BindView(R.id.lvWoodland_information)
     ListView lvWoodlandInformation;
-    @BindView(R.id.container)
-    LinearLayout container;
+
 
     private Context context;
     @Override

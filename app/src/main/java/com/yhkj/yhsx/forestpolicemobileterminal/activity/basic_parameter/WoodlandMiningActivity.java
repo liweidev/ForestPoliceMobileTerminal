@@ -5,9 +5,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.yhkj.yhsx.forestpolicemobileterminal.R;
@@ -23,29 +20,33 @@ import java.util.List;
 import butterknife.BindView;
 
 /**
- * 林地内开采沙、土石矿情况登记
+ * 李伟 2017.6.18
+ * 信息采集--基础台账--林地内开采沙、土、石、矿情况登记--林地内开采沙、土、石、矿添加
  */
 public class WoodlandMiningActivity extends ParentActivity implements View.OnClickListener {
 
-
-    @BindView(R.id.ivAlarm)
-    ImageView ivAlarm;
+    /**
+     * 保存
+     */
     @BindView(R.id.tv_save)
     TextView tvSave;
-    @BindView(R.id.mytitle)
-    RelativeLayout mytitle;
+    /**
+     * 基本信息
+     */
     @BindView(R.id.btn_basic)
     Button btnBasic;
+    /**
+     * 附件
+     */
     @BindView(R.id.btn_attachment)
     Button btnAttachment;
+
     @BindView(R.id.view1)
     View view1;
     @BindView(R.id.view2)
     View view2;
     @BindView(R.id.viewPager)
     ViewPager viewPager;
-    @BindView(R.id.woodland_pager)
-    LinearLayout woodlandPager;
 
     private List<Fragment> pageViews;
     @Override

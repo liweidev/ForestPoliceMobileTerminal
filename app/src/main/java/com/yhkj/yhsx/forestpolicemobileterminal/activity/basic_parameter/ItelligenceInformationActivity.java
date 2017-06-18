@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.ListView;
 
 import com.yhkj.yhsx.forestpolicemobileterminal.R;
@@ -15,18 +14,20 @@ import com.yhkj.yhsx.forestpolicemobileterminal.utils.ToastUtility;
 import butterknife.BindView;
 
 /**
- * 情报信息查询
+ * 李伟 2017.6.18
+ * 信息采集--基础台账--情报信息登记
  */
 public class ItelligenceInformationActivity extends ParentActivity implements View.OnClickListener {
-
-    @BindView(R.id.icon)
-    ImageView icon;
+    /**
+     * 添加
+     */
     @BindView(R.id.btn_add)
     ImageView btnAdd;
+    /**
+     * 情报信息列表
+     */
     @BindView(R.id.lvItelligence_information)
     ListView lvItelligenceInformation;
-    @BindView(R.id.container)
-    LinearLayout container;
 
     private Context context;
 
