@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+     >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp" >
+
+        <LinearLayout
+            android:id="@+id/handCases"
+            style="@style/main_menu_LinearLayout1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                style="@style/main_menu_image1"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="执法办案"
+                android:src="@mipmap/zhifaba" />
+
+            <TextView
+                style="@style/main_menu_text1"
+                android:text="执法办案"
+                android:textColor="#151515" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/main_menu_LinearLayout1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="invisible">
+
+
+        </LinearLayout>
+        <LinearLayout
+            style="@style/main_menu_LinearLayout1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="invisible">
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

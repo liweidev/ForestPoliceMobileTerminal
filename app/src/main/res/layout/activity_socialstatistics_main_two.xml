@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical" >
+    
+    <EditText
+        android:id="@+id/etPopulationCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/populationcount"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="11"
+        android:padding="5dp"
+        android:singleLine="true" />
+<EditText
+        android:id="@+id/etArriculturePopulation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/arriculturepopulation"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="11"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+<EditText
+        android:id="@+id/etNonArriculturealPopulation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/nonarriculturealpopulation"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="11"
+        android:padding="5dp"
+        android:singleLine="true" />
+    
+    <EditText
+        android:id="@+id/etTemporaryPopulation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/temporarypopulation"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="11"
+        android:padding="5dp"
+        android:singleLine="true" />
+    
+   
+</LinearLayout>

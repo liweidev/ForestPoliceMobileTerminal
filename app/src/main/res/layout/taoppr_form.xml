@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <Spinner
+        android:id="@+id/spTaoppr_CompetentAuthorities"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:spinnerMode="dialog" />
+
+    <EditText
+        android:id="@+id/etTaoppr_TreeComOrSLNumbers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/comOrSLNumber"
+        android:imeOptions="actionNext"
+        android:padding="5dp"
+        android:singleLine="true" >
+
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <Spinner
+            android:id="@+id/spTaoppr_plantNames"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:spinnerMode="dialog" />
+
+        <Spinner
+            android:id="@+id/spTaoppr_treeAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:spinnerMode="dialog"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/et_treeAge"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_bg"
+            android:hint="树龄"
+            android:inputType="numberDecimal"
+            android:maxLength="15"
+            android:padding="6dp"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <Spinner
+            android:id="@+id/spTaoppr_ProtectionLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:spinnerMode="dialog" />
+
+        <Spinner
+            android:id="@+id/spTaoppr_Status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:spinnerMode="dialog" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etTaoppr_TreeProtectFileNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/TreesNum"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <EditText
+            android:id="@+id/etTaoppr_TreeProtectFileNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:hint="@string/TreesNum"
+            android:imeOptions="actionNext"
+            android:padding="5dp"
+            android:inputType="number"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/etNoOriginalListing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="@string/noOriginalListing"
+            android:imeOptions="actionNext"
+            android:padding="5dp"
+            android:singleLine="true" />
+    </LinearLayout>
+    -->
+
+
+    <!--
+         <Spinner
+        android:id="@+id/spTaoppr_Feature"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:spinnerMode="dialog" />
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <EditText
+            android:id="@+id/etTaoppr_TreeMapoPersonnel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:hint="@string/mapoPersonnel"
+            android:imeOptions="actionNext"
+            android:padding="5dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/etTaoppr_TreePhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:hint="@string/phone"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:padding="5dp"
+            android:singleLine="true" />
+    </LinearLayout>
+
+</LinearLayout>

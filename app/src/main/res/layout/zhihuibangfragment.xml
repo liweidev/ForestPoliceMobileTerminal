@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+     >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       android:layout_margin="30dp" >
+
+        <LinearLayout
+            android:id="@+id/newsBulletin"
+            style="@style/main_menu_LinearLayout1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                style="@style/main_menu_image1"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="新闻公告"
+                android:src="@mipmap/xinwewngg" />
+
+            <TextView
+                style="@style/main_menu_text1"
+                android:text="新闻公告"
+                android:textColor="#151515" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/jobLog1"
+            style="@style/main_menu_LinearLayout1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1" >
+
+            <ImageView
+                style="@style/main_menu_image1"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="工作日志"
+                android:src="@mipmap/gongzuorizhi" />
+
+            <TextView
+                style="@style/main_menu_text1"
+                android:text="工作日志"
+                android:textColor="#151515" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/policeNote"
+            style="@style/main_menu_LinearLayout1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                style="@style/main_menu_image1"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="警务便签"
+                android:src="@mipmap/jingwu" />
+
+            <TextView
+                style="@style/main_menu_text1"
+                android:text="警务便签"
+                android:textColor="#151515" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/watchWatch"
+            style="@style/main_menu_LinearLayout1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                style="@style/main_menu_image1"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="值班表"
+                android:src="@mipmap/zhibanbiao" />
+
+            <TextView
+                style="@style/main_menu_text1"
+                android:text="值班表"
+                android:textColor="#151515" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lawQury"
+            style="@style/main_menu_LinearLayout1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1" >
+
+            <ImageView
+                style="@style/main_menu_image1"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="法律法规查询"
+                android:src="@mipmap/falvfagui" />
+
+            <TextView
+                style="@style/main_menu_text1"
+                android:text="法律法规查询"
+                android:textSize="16sp"
+                android:textColor="#151515" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/main_menu_LinearLayout1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="invisible" >
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

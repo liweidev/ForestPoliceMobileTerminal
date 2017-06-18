@@ -1,0 +1,113 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:context="com.yhkj.jskf.forestpoliceproject.ManagedObjectAddActivity$PlaceholderFragment" >
+
+        <EditText
+            android:id="@+id/etManagedObjectUnitName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:hint="@string/unit_name"
+            android:imeOptions="actionNext"
+            android:padding="5dp"
+            android:singleLine="true" />
+
+        <Spinner
+            android:id="@+id/spManagedObjectGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/etManagedObjectDomicilePlace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:hint="@string/domicile_place"
+            android:imeOptions="actionNext"
+            android:padding="5dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/etManagedObjectCardID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:hint="@string/card_id"
+            android:imeOptions="actionNext"
+            android:padding="5dp"
+            android:inputType="number"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/etManagedObjectAddressOrUnit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:hint="@string/address_or_unit"
+            android:imeOptions="actionNext"
+            android:padding="5dp"
+            android:singleLine="true" />
+
+        <Spinner
+            android:id="@+id/spManagedObjectCareer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+        <Spinner
+            android:id="@+id/spManagedObjectManagedCause"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/etManagedObjectSpecificCauses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:hint="@string/specific_causes"
+            android:imeOptions="actionNext"
+            android:padding="5dp" />
+
+        <com.yhkj.yhsx.forestpolicemobileterminal.widget.DateInputEditText
+            android:id="@+id/dietManagedObjectManagedTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:hint="@string/managed_time"
+            android:imeOptions="actionNext"
+            android:padding="5dp"
+            android:singleLine="true" />
+
+        <Spinner
+            android:id="@+id/etManagedObjectResponsibilityPolice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+
+</ScrollView>

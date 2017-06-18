@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:paddingRight="100dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <TextView
+                style="@style/alarm_text"
+                android:textColor="@color/translucent_red"
+                android:text="@string/dispose_result" />
+
+            <EditText
+                android:id="@+id/etDisposeResult"
+                style="@style/alarm_edittext_lines" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/alarm_text"
+                android:text="@string/decive_unit" />
+
+            <EditText
+                android:id="@+id/etReceiveUnit"
+                style="@style/alarm_edittext"
+                android:inputType="text"
+                android:maxLength="11" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <TextView
+                style="@style/alarm_text"
+                android:text="@string/alarming_times" />
+
+            <com.yhkj.jskf.forestpoliceproject.widget.DateAndTimeInputEditText
+                android:id="@+id/etAlarmingDates"
+                style="@style/alarm_edittext" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <TextView
+                style="@style/alarm_text"
+                android:text="@string/criminal_case_number" />
+
+            <EditText
+                android:id="@+id/etCriminalCaseNumber"
+                style="@style/alarm_edittext"
+                android:inputType="number"
+                android:maxLength="11" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <TextView
+                style="@style/alarm_text"
+                android:text="@string/admin_case_number" />
+
+            <EditText
+                android:id="@+id/etAdminCaseNumber"
+                style="@style/alarm_edittext"
+                android:inputType="number"
+                android:maxLength="11" >
+            </EditText>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <Button
+            android:id="@+id/btFinish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/submit_btn_bg"
+            android:padding="10dp"
+            android:text="@string/alarm_finish"
+            android:textColor="@color/dialog_gray_default" />
+    </LinearLayout>
+
+</RelativeLayout>

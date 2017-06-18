@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/gridviewItemDimension" >
+
+    <ImageView
+        android:id="@+id/nciv_pug"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerInside" />
+
+
+</RelativeLayout>

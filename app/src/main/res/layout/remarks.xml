@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <EditText
+        android:id="@+id/etNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/note"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:padding="5dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <GridView
+        android:id="@+id/gwAttachment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp"
+        android:numColumns="4" >
+    </GridView>
+
+</LinearLayout>

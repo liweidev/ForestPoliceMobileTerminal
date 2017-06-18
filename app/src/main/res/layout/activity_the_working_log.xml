@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="${packageName}.${activityClass}" >
+
+    <com.yhkj.jskf.forestpoliceproject.widget.DateInputEditText
+        android:id="@+id/etWorkLogDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/the_working_log_date"
+        android:padding="5dp" />
+
+    <Spinner
+        android:id="@+id/spWeather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+
+    <!-- <EditText
+        android:id="@+id/etPoliceOnDuty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/police_on_duty"
+        android:padding="5dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/etClassLeaders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/class_leaders"
+        android:padding="5dp" >
+    </EditText> -->
+    
+    <Spinner
+        android:id="@+id/spClassLeaders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/etTheMainWorkImportantEvents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/the_main_work_and_important_events"
+        android:lines="5"
+        android:padding="5dp" />
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yhkj.jskf.forestpoliceproject.activity.law.LawsRegulationsActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <com.yhkj.jskf.forestpoliceproject.widget.HeadTitleView
+        android:id="@+id/headTitleView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+    </com.yhkj.jskf.forestpoliceproject.widget.HeadTitleView>
+
+    <ListView
+        android:id="@+id/lvLawsRegulations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llfiltrate"
+        android:layout_centerHorizontal="true" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/llfiltrate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/headTitleView1"
+        android:background="@color/gray"
+        android:orientation="vertical"
+        android:weightSum="3"
+        android:padding="10dp" >
+
+        <EditText
+            android:id="@+id/etFullText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_weight="1"
+            android:hint="全文检索"
+            android:singleLine="true" />
+
+        <!-- <Spinner
+            android:id="@+id/spType"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+             android:layout_weight="1" /> -->
+
+        <Button
+            android:id="@+id/tvConfirm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/submit_btn_bg"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="搜        索"
+            android:textColor="@color/dialog_text" />
+    </LinearLayout>
+
+</RelativeLayout>

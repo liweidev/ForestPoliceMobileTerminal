@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+    
+ <EditText
+        android:id="@+id/etEmphasisUnitCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/emphasisunitcount"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="11"
+        android:padding="5dp"
+        android:singleLine="true" />
+    <EditText
+        android:id="@+id/etWoodProcessingUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/woodprocessingunit"
+        android:imeOptions="actionNext"
+        android:maxLength="11"
+        android:inputType="number"
+        android:padding="5dp"
+        android:singleLine="true" />
+ <EditText
+        android:id="@+id/etWoodPurchaseUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/woodpurchaseunit"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="11"
+        android:padding="5dp"
+        android:singleLine="true" />
+ 
+ <EditText
+        android:id="@+id/etQuarryingUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/quarryingunit"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="11"
+        android:padding="5dp"
+        android:singleLine="true" />
+ <EditText
+        android:id="@+id/etCollieryUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/collieryunit"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="11"
+        android:padding="5dp"
+        android:singleLine="true" />
+ <EditText
+        android:id="@+id/etFlaystoneUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/flaystoneunit"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="11"
+        android:padding="5dp"
+        android:singleLine="true" />
+ <EditText
+        android:id="@+id/etWildAnimalUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/wildanimalunit"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="11"
+        android:padding="5dp"
+        android:singleLine="true" />
+ 
+ <EditText
+        android:id="@+id/etTravelUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/travelunit"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="11"
+        android:padding="5dp"
+        android:singleLine="true" />
+</LinearLayout>

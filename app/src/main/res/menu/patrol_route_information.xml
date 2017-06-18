@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:id="@+id/menu_new"
+        android:icon="@android:drawable/ic_input_add"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/title_activity_animal_information"/>
+    <item
+        android:id="@+id/menu_new_stop"
+        android:icon="@drawable/routeline_zanting"
+        android:orderInCategory="100"
+        android:showAsAction="always|withText"
+        android:visible="false"
+        android:title="结束巡逻路线"/>
+
+</menu>

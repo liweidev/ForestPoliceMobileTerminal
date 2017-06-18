@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp">
+
+        <LinearLayout
+            android:id="@+id/basisAccou"
+            style="@style/main_menu_LinearLayout1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                style="@style/main_menu_image1"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="基础台账"
+                android:src="@mipmap/jctz" />
+
+            <TextView
+                style="@style/main_menu_text1"
+                android:text="基础台账"
+                android:textColor="#151515" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/securityManage"
+            style="@style/main_menu_LinearLayout1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                style="@style/main_menu_image1"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="治安管理"
+                android:src="@mipmap/zagl" />
+
+            <TextView
+
+                style="@style/main_menu_text1"
+                android:text="治安管理"
+                android:textColor="#151515" />
+        </LinearLayout>
+        <LinearLayout
+            style="@style/main_menu_LinearLayout1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="invisible"></LinearLayout>
+    </LinearLayout>
+
+    <!--<LinearLayout
+        android:id="@+id/populationMan"
+        style="@style/main_menu_LinearLayout1"
+          android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_weight="1"  >
+
+        <ImageView
+            style="@style/main_menu_image1"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="人口管理"
+            android:src="@drawable/rkgl" />
+
+        <TextView
+            style="@style/main_menu_text1"
+            android:text="人口管理"
+            android:textColor="#151515" />
+    </LinearLayout>-->
+    <!--<LinearLayout
+
+       android:id="@+id/fireProo"
+       style="@style/main_menu_LinearLayout1"
+       android:layout_width="0dp"
+       android:layout_height="match_parent"
+       android:layout_weight="1" >
+
+       <ImageView
+           style="@style/main_menu_image1"
+           android:layout_marginBottom="10dp"
+           android:contentDescription="防火工作"
+           android:src="@drawable/fhgz" />
+
+       <TextView
+           style="@style/main_menu_text1"
+           android:text="防火工作"
+           android:textColor="#151515" />
+   </LinearLayout>
+</LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal">
+
+
+        <!--<LinearLayout
+             android:id="@+id/sqng"
+             style="@style/main_menu_LinearLayout1"
+               android:layout_width="0dp"
+                 android:layout_marginLeft="30dp"
+             android:layout_marginRight="30dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1" >
+
+             <ImageView
+                 style="@style/main_menu_image1"
+                 android:layout_marginBottom="10dp"
+                 android:contentDescription="三情"
+                 android:src="@drawable/sq" />
+
+             <TextView
+
+                 style="@style/main_menu_text1"
+                 android:text="三情"
+                 android:textColor="#151515" />
+         </LinearLayout>-->
+
+    </LinearLayout>
+
+</RelativeLayout>

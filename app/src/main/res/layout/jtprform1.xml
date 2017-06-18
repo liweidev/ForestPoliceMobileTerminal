@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <com.yhkj.jskf.forestpoliceproject.widget.DateAndTimeInputEditText
+        android:id="@+id/etJtpr_Inspectdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:visibility="gone"
+        android:hint="@string/Inspectdate"
+        android:padding="5dp" />
+    <Spinner
+        android:id="@+id/spJtprIndustry_Year"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:padding="5dp"
+        android:spinnerMode="dialog" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/etJtpr_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:hint="@string/name"
+            android:imeOptions="actionNext"
+            android:padding="5dp"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tvJtpr_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="2"
+                android:text="@string/sex"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <RadioGroup
+                android:id="@+id/rgJtpr_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal" >
+
+                <!-- <RadioButton
+                    android:id="@+id/rbJtpr_boy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/boy" />
+
+                <RadioButton
+                    android:id="@+id/rbJtpr_girl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/girl" /> -->
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.yhkj.jskf.forestpoliceproject.widget.DateInputEditText
+        android:id="@+id/etJtpr_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/date"
+        android:padding="5dp" />
+
+    <EditText
+        android:id="@+id/etJtpr_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/phone"
+        android:imeOptions="actionNext"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+    <Spinner
+        android:id="@+id/spJtprIndustry_Name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:padding="5dp"
+        android:spinnerMode="dialog" />
+
+    <EditText
+        android:id="@+id/etJtpr_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/address"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/etJtpr_Hukou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/hukou"
+        android:imeOptions="actionNext"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/etJtpr_IDCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/id_card"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:maxLength="18"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+    <com.yhkj.jskf.forestpoliceproject.widget.DateInputEditText
+        android:id="@+id/etJtpr_arrivalTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/arrival_time"
+        android:padding="5dp" />
+
+    <com.yhkj.jskf.forestpoliceproject.widget.DateInputEditText
+        android:id="@+id/etJtpr_departureTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/departure_time"
+        android:padding="5dp" />
+
+</LinearLayout>

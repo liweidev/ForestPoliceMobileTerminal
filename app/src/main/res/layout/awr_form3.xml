@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <EditText
+        android:id="@+id/etAwr_PIBriefCase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/PIBriefCase"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:padding="5dp" >
+    </EditText>
+
+    <com.yhkj.jskf.forestpoliceproject.widget.DateAndTimeInputEditText
+        android:id="@+id/etAwr_PIEndTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/PIEndTime"
+        android:padding="5dp" />
+
+    <EditText
+        android:id="@+id/etAwr_apAdvice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/apAdvice"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:padding="5dp" />
+
+    <EditText
+        android:id="@+id/etAwr_aprfComments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/aprfComments"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:padding="5dp" />
+
+    <EditText
+        android:id="@+id/etAwr_fpsoInstructions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/fpsoInstructions"
+        android:lines="2"
+        android:padding="5dp" />
+
+</LinearLayout>

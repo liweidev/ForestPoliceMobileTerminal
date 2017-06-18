@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.yhkj.jskf.forestpoliceproject.activity.alarm.AlarmApprovalListActivity" >
+
+    <com.yhkj.jskf.forestpoliceproject.widget.HeadTitleView
+        android:id="@+id/htvMain"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/htvMain"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:id="@+id/alarmingNewly"
+            style="@style/alarming_query_list"
+            android:layout_centerHorizontal="true" >
+
+            <ImageView
+                style="@style/main_menu_image"
+                android:src="@drawable/tianjia" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="@string/newly_alarming"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:padding="5dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_weight="1" >
+
+            <Spinner
+                android:id="@+id/spPolicePeople"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="6dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/alarming_time" />
+
+            <com.yhkj.jskf.forestpoliceproject.widget.DateInputEditText
+                android:id="@+id/etAlarmingTime"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/edittext_bg"
+                android:ems="10"
+                android:inputType="date"
+                android:padding="5dp"
+                android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/llSearch2"
+    android:orientation="horizontal"
+    android:layout_below="@id/llSearch"
+    android:padding="5dp"
+    >
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_weight="1" >
+
+            <!--
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/alarming_state" />
+
+            <EditText
+                android:id="@+id/etAlarmingState"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/edittext_bg"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="11"
+                android:padding="5dp"
+                android:singleLine="true" />
+            -->
+
+            <Spinner
+                android:id="@+id/spStateInfor"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp" 
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btAlarmingSure"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/submit_btn_bg"
+                android:text="@string/alarming_sure"
+                android:textColor="@color/dialog_gray_default" />
+        </LinearLayout>
+</LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeAlarmingQueryList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llSearch2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp" >
+
+        <ListView
+            android:id="@+id/lvAlarmingQueryList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:divider="#000"
+            android:dividerHeight="1dp" >
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>

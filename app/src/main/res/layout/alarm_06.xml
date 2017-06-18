@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <EditText
+        android:id="@+id/etProcessingResultses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/processingResults"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/etTransfer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:hint="@string/Transfer"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:padding="5dp"
+            android:singleLine="true" />
+
+        <com.yhkj.jskf.forestpoliceproject.widget.DateAndTimeInputEditText
+            android:id="@+id/etReceiveDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:hint="@string/receive"
+            android:inputType="datetime"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/etCrownCaseNoesds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="@string/crown_case_no"
+            android:inputType="number"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/etAdministrativeCaseNoes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="@string/administrative_case_no"
+            android:inputType="number"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/etAwrfpsoInstructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="@string/fpsoInstructions"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:padding="5dp" />
+
+        <com.yhkj.jskf.forestpoliceproject.widget.DateAndTimeInputEditText
+            android:id="@+id/etAwrPIEndTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:hint="@string/instruction_time"
+            android:padding="5dp" />
+
+</LinearLayout>

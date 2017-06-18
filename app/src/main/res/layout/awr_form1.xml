@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <com.yhkj.jskf.forestpoliceproject.widget.DateAndTimeInputEditText
+        android:id="@+id/etAwr_instructionDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/instructionDate"
+        android:padding="5dp" />
+
+    <com.yhkj.jskf.forestpoliceproject.widget.DateAndTimeInputEditText
+        android:id="@+id/etAwr_dateToReach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/dateToReach"
+        android:padding="5dp" />
+
+    <EditText
+        android:id="@+id/etAwr_organizedPolice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/organizedPolice"
+        android:lines="2"
+        android:padding="5dp" />
+
+    <EditText
+        android:id="@+id/etAwr_Co_police"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/Co_police"
+        android:lines="2"
+        android:padding="5dp" />
+
+</LinearLayout>

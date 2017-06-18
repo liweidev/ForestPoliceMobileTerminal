@@ -1,0 +1,140 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+     >
+
+    <EditText
+        android:id="@+id/etForestryKeyIndustriesUnitName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/crimes_unit_name"
+        android:imeOptions="actionNext"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:singleLine="true" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/etForestryKeyIndustriesAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/crimes_add"
+        android:imeOptions="actionNext"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+   <!--  <EditText
+        android:id="@+id/etForestryKeyIndustriesLicense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/forestry_key_industries_license"
+        android:imeOptions="actionNext"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:singleLine="true" /> -->
+ <Spinner
+        android:id="@+id/etForestryKeyIndustriesLicense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        />
+    <!-- <EditText
+        android:id="@+id/etForestryKeyIndustriesOperateType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/forestry_key_industries_operate_type"
+        android:imeOptions="actionNext"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:singleLine="true" /> -->
+        
+        <Spinner
+        android:id="@+id/etForestryKeyIndustriesOperateType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+         />
+
+    <EditText
+        android:id="@+id/etForestryKeyIndustriesPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/forestry_key_industries_principal"
+        android:imeOptions="actionNext"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/etForestryKeyIndustriesContactInfromation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/forestry_key_industries_contact_information"
+        android:imeOptions="actionNext"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+    <!-- <EditText
+        android:id="@+id/etForestryKeyIndustriesVarietieesSourcess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/forestry_key_industries_varieties_sourcess"
+        android:imeOptions="actionNext"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:singleLine="true" /> -->
+
+	<Spinner
+        android:id="@+id/etForestryKeyIndustriesVarietieesSourcess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+     	 />
+    <Spinner
+        android:id="@+id/spForestryKeyIndustriesProtectionLevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/etForestryKeyIndustriesPractitionerNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/forestry_key_industries_practitioner_number"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+</LinearLayout>

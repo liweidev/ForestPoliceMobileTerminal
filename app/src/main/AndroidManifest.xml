@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yhkj.yhsx.forestpolicemobileterminal">
+
+    <!-- 获取手机IMEI -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 网络 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 拍照 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 自动对焦 -->
+    <!-- <uses-feature android:name = "android.hardware.camera.autofocus" /> -->
+    <!-- 开机自启动 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- 定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.basic_parameter.AnimalInformationDetailActivity"
+            android:label="@string/title_activity_animal_information"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" />
+        <activity
+            android:name=".activity.basic_parameter.PlantsProtectAddActivity"
+            android:label="@string/title_activity_registration_key_protected_plants"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" />
+        <activity
+            android:name=".activity.basic_parameter.PlantProtectDetailActivity"
+            android:label="@string/title_activity_plant_protectt"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" />
+        <activity
+            android:name=".activity.ImageShowActivity"
+            android:label="@string/title_activity_image_show"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" />
+        <activity
+            android:name=".activity.SignatureActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MapActivity"
+            android:label="@string/title_activity_map"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.patrol_route.PatrolRouteInformationActivity"
+            android:label="@string/title_activity_patrol_route_information"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" />
+        <activity
+            android:name=".activity.patrol_route.PatrolRouteManagementActivity"
+            android:label="@string/title_activity_patrol_route_management"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" />
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ApiSettingActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" />
+
+        <service android:name=".services.OnPatrolRegisterService" />
+        <service android:name=".services.Upload30DatasService" />
+        <service android:name=".services.DownloadApkService" />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="HczP5NPbMCuXTxyK4U5kR2pH" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+        <service
+            android:name=".services.MqttService"
+            android:enabled="true" />
+        <service
+            android:name=".services.MyService"
+            android:enabled="true" />
+        <service android:name=".services.PatrolRouteManagementService" />
+
+        <receiver android:name=".receiver.ConnectionBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SCREEN_ON" />
+                <action android:name="android.intent.action.SCREEN_OFF" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activity.PublicSecurityManagementActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.basic_parameter.AnimalsAddActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.basic_parameter.ManagedObjectListActivity"
+            android:label="@string/title_activity_managed_object_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" />
+        <activity
+            android:name=".activity.basic_parameter.ManagedObjectAddActivity"
+            android:label="@string/title_activity_managed_object_add"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" />
+        <activity
+            android:name=".activity.basic_parameter.ForestryKeyIndustriesQueryActivity"
+            android:label="@string/title_activity_forestry_key_industries_query"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" />
+        <activity
+            android:name=".activity.basic_parameter.ForestryKeyIndustriesAddActivity"
+            android:label="@string/title_activity_forestry_key_industries_query"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" />
+        <activity
+            android:name=".activity.basic_parameter.WoodlandMiningListActivity"
+            android:label="@string/title_woodland_query"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" />
+        <activity
+            android:name=".activity.basic_parameter.WoodlandMiningActivity"
+            android:label="@string/title_woodland_mian"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" />
+        <activity
+            android:name=".activity.basic_parameter.WoodCuttingListActivity"
+            android:label="@string/title_woodcutting_query"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" />
+        <activity
+            android:name=".activity.basic_parameter.WoodCuttingActivity"
+            android:label="@string/title_woodcutting_main"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" />
+        <activity
+            android:name=".activity.basic_parameter.ItelligenceInformationActivity"
+            android:label="@string/title_Itelligence_query"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" />
+        <activity
+            android:name=".activity.basic_parameter.ItelligenceActivity"
+            android:label="@string/title_Itelligence_main"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" />
+        <activity
+            android:name=".activity.basic_parameter.SocialStatisticsListActivity"
+            android:label="@string/title_socialstatistics_query"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan"></activity>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name=".activity.basic_parameter.SocialStatisticsActivity"
+            android:label="@string/basic_account_childmenu_11"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+    </application>
+
+</manifest>

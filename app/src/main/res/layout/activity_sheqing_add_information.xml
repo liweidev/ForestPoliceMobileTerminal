@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/village_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bg"
+                android:ellipsize="end"
+                android:hint="@string/village_name"
+                android:padding="5dp"
+                android:singleLine="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp" >
+
+                <!-- 居民人口数 -->
+
+                <EditText
+                    android:id="@+id/shqresidentpopulation_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="@string/resident"
+                    android:inputType="number"
+                    android:padding="5dp" />
+                <!-- 暂住人口数 -->
+
+                <EditText
+                    android:id="@+id/shqtransientpopulation_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="@string/stay"
+                    android:inputType="number"
+                    android:padding="5dp" />
+            </LinearLayout>
+            <!-- 行政村常住人口数 -->
+
+            <EditText
+                android:id="@+id/shqresidentvillage_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_bg"
+                android:hint="@string/permanent"
+                android:inputType="number"
+                android:padding="5dp" />
+            <!-- 交通分布情况 -->
+
+            <EditText
+                android:id="@+id/shqtrafficdistribution_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_bg"
+                android:hint="@string/trafficcondition"
+                android:padding="5dp" />
+            <!-- 清明节扫墓时间及风俗 -->
+
+            <EditText
+                android:id="@+id/shqtombcustoms_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_bg"
+                android:hint="@string/custom"
+                android:padding="5dp" />
+            <!-- 文物古迹 -->
+
+            <Spinner
+                android:id="@+id/shqculturalsites_sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:spinnerMode="dialog" />
+            <!-- 主要餐饮业情况 -->
+
+            <EditText
+                android:id="@+id/shqmajorindustry_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_bg"
+                android:hint="@string/repast"
+                android:padding="5dp" />
+            <!-- 主要产业及经济来源 -->
+
+            <Spinner
+                android:id="@+id/shqmajorsources_sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:spinnerMode="dialog" />
+            <!-- 呆、傻精神病人情况 -->
+
+            <EditText
+                android:id="@+id/shqstaysillypatient_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_bg"
+                android:hint="@string/patients"
+                android:padding="5dp" />
+            <!-- 特色物产 -->
+
+            <Spinner
+                android:id="@+id/shqcharacteristicproperty_sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:spinnerMode="dialog" />
+            <!-- 村领导干部及联系方式 -->
+
+            <EditText
+                android:id="@+id/shqvillagecontact_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_bg"
+                android:hint="@string/contact"
+                android:padding="5dp" />
+            <!-- 土地承包情况 -->
+
+            <EditText
+                android:id="@+id/shqlandcontract_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_bg"
+                android:hint="@string/bycontract"
+                android:padding="5dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.yhkj.jskf.forestpoliceproject.PublicSecurityManagementActivity" >
+
+    <item
+        android:id="@+id/action_activity_public_security_management"
+        android:orderInCategory="100"
+        android:title="@string/signature_save"
+        android:enabled="false"
+        app:showAsAction="always"/>
+
+</menu>

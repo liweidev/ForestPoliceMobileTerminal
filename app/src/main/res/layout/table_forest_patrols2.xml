@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <EditText
+        android:id="@+id/etTfp_AnalysisOfDisposal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/analysisOfDisposal"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:padding="5dp" >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/etTfp_ShiftLeadershipOpinion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/shiftLeadershipOpinion"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:padding="5dp" />
+
+</LinearLayout>

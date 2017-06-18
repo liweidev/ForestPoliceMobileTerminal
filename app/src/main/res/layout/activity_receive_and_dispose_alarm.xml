@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.yhkj.jskf.forestpoliceproject.activity.ReceiveAndDisposeAlarmActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <com.yhkj.jskf.forestpoliceproject.widget.HeadTitleView
+        android:id="@+id/htvTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:id="@+id/llNoticeAlarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/htvTitle"
+        android:background="@drawable/edittext_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:visibility="gone" >
+
+        <Spinner
+            android:id="@+id/spDateAlarm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.yhkj.jskf.forestpoliceproject.widget.DateAndTimeInputEditText
+            android:id="@+id/etNoticeDateAlarm"
+            style="@style/alarm_edittext"
+            android:layout_weight="1"
+            android:hint="消息提醒时间"
+            android:padding="15dp" 
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:id="@+id/btNoticeSaveAlarm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/submit_btn_bg"
+            android:padding="15dp"
+            android:text="@string/signature_save"
+            android:textColor="@color/dialog_gray_default" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llNoticeAlarm"
+        android:background="@android:color/background_light" >
+
+        <TextView
+            android:id="@+id/tvAllCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/background_light"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:fadingEdge="@null"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/ll_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp" >
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/rlCategory" >
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

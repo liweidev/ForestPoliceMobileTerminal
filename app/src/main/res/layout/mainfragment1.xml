@@ -1,0 +1,221 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <!-- <RelativeLayout
+       
+        android:id="@+id/mytitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#182330"
+         >
+
+        <ImageView
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="25dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           
+            android:src="@drawable/seting" />
+
+        <TextView
+            android:textColor="#ffffff"
+            android:textSize="38px"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="森林公安移动终端" />
+
+        <ImageView
+             android:layout_centerVertical="true"
+           android:layout_alignParentRight="true"
+            android:layout_marginBottom="18dp"
+            android:layout_marginRight="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          
+            android:src="@drawable/tongbu" />
+       
+    </RelativeLayout>
+  <com.yhkj.jskf.forestpoliceproject.widget.MarqueeTextView 
+      android:gravity="center"
+    android:textColor="#4f4f50"
+    android:textSize="28px"
+    android:background="#f0efef"
+         android:focusableInTouchMode="true" 
+        android:scrollHorizontally="true"
+          android:focusable="true"  
+        android:layout_below="@+id/mytitle"
+       android:layout_width="wrap_content"
+    android:layout_height="50dp"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="2016年四月12，星期二，值班领导段红波，值班民警段红波饿34323424245554545"
+        android:id="@+id/mk" />
+<LinearLayout 
+        
+           android:id="@+id/beonduty"
+           android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+           android:layout_below="@id/mk"
+           android:orientation="vertical"
+        >
+ 		<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             >
+
+            <TextView
+                android:id="@+id/tvOndutyTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:textColor="#CC092F"/>
+
+            <TextView
+                android:id="@+id/tvOndutyLeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+               android:textColor="#CC092F"/>
+        </LinearLayout>
+        <TextView
+                android:id="@+id/tvOndutyPolice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#CC092F"/>
+        </LinearLayout>
+  <android.support.v4.view.ViewPager
+        android:id="@+id/pagerMain"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/main_bottom"
+        android:layout_below="@+id/mk" >
+    </android.support.v4.view.ViewPager>
+    <View 
+        android:background="#F0F0F0"
+        android:layout_above="@+id/main_bottom"
+        android:layout_below="@+id/pagerMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:visibility="visible"
+        >
+
+        
+
+         <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_alignParentLeft="true"
+             android:layout_centerVertical="true"
+             android:gravity="center"
+              > 
+
+              <LinearLayout
+                  android:id="@+id/img_weixin"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:layout_weight="0.98"
+                  android:background="#ffffff"
+                  android:gravity="center_horizontal"
+                  android:orientation="vertical" >
+               	
+                <ImageView
+            		
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"        	     	
+        			android:scaleType="matrix"
+        			android:src="@drawable/xunfgl" />
+                <TextView
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:text="巡防管理"
+            		android:textColor="#2482d3"
+            		android:textSize="20px" />                
+        	 </LinearLayout>
+
+            <LinearLayout
+                	android:id="@+id/img_address"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+               	
+                <ImageView
+            	
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"        	     	
+        			android:scaleType="matrix"
+        			android:src="@drawable/xinxi" />
+                <TextView
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:text="信息采集"
+            		android:textColor="#A1A1A1"
+            		android:textSize="20px" />                
+        	 </LinearLayout>
+
+        	 <LinearLayout
+        	     android:id="@+id/img_friends"
+        	     android:layout_width="wrap_content"
+        	     android:layout_height="match_parent"
+        	     android:layout_weight="1.00"
+        	     android:gravity="center_horizontal"
+        	     android:orientation="vertical" >
+               	
+                <ImageView
+            		
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"        	     	
+        			android:scaleType="matrix"
+        			android:src="@drawable/zfba1" />
+                <TextView
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:text="执法办案"
+            		android:textColor="#A1A1A1"
+            		android:textSize="20px" />                
+        	 </LinearLayout>
+
+        	 	 <LinearLayout
+        	 	     android:id="@+id/img_settings"
+        	 	     android:layout_width="wrap_content"
+        	 	     android:layout_height="match_parent"
+        	 	     android:layout_weight="1.00"
+        	 	     android:gravity="center_horizontal"
+        	 	     android:orientation="vertical" >
+               	
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="matrix"
+                    android:src="@drawable/zhbg1" />
+
+                <TextView
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:text="智慧办公"
+            		android:textColor="#A1A1A1"
+            		android:textSize="20px" />                
+        	 </LinearLayout>        
+          
+         </LinearLayout>
+       
+    </RelativeLayout>
+ -->
+</RelativeLayout>

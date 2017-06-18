@@ -1,0 +1,113 @@
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/wood_pager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.basic_parameter.WoodCuttingActivity">
+    <RelativeLayout
+
+        android:id="@+id/mytitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#182330">
+
+        <ImageView
+            android:id="@+id/ivAlarm"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="15dp"
+
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/title_woodcutting_main"
+            android:textColor="#ffffff"
+            android:layout_toRightOf="@id/ivAlarm"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_save"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@null"
+                android:text="保存"
+                android:textColor="#cfc3c3"
+                android:gravity="center"
+                android:enabled="false"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/btn_basic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="基本信息"
+            android:background="#182330"
+            android:textColor="#FFFF"
+            />
+        <Button
+            android:id="@+id/btn_attachment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="检查情况与附件"
+            android:background="#182330"
+            android:textColor="#FFFF"
+            />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#182330"
+        >
+        <View
+            android:id="@+id/view1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#2d9ded"/>
+        <View
+            android:id="@+id/view2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#182330"/>
+
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></android.support.v4.view.ViewPager>
+</LinearLayout>
+    
+

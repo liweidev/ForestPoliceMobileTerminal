@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <Spinner
+        android:id="@+id/spFpc_UnitName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:spinnerMode="dialog" />
+
+    <EditText
+        android:id="@+id/etFpc_No"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/pcNo"
+        android:imeOptions="actionNext"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+    <com.yhkj.jskf.forestpoliceproject.widget.DateAndTimeInputEditText
+        android:id="@+id/dtFpc_PcTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/pcTime"
+        android:padding="5dp" />
+
+    <EditText
+        android:id="@+id/etFpc_PcRoutes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="@string/pcRoutes"
+        android:imeOptions="actionNext"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/etFpc_pInspectors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="@string/pInspectors"
+        android:imeOptions="actionNext"
+        android:padding="5dp"
+        android:singleLine="true" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/etFpc_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/pi_jian_phone"
+        android:imeOptions="actionNext"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+</LinearLayout>

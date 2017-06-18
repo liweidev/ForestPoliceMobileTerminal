@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <EditText
+        android:id="@+id/etFrka_traffic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/traffic"
+        android:imeOptions="actionNext"
+        android:padding="5dp"
+        android:singleLine="true" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/etFrka_latLonAltitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/latLonAltitude"
+        android:imeOptions="actionNext"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/etFrka_scopeAndNature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/scopeAndNature"
+        android:imeOptions="actionNext"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/tvFrka_fourCases"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fourCases"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/etFrka_fourCasesEast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bg"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="@string/four_cases_east" />
+
+            <EditText
+                android:id="@+id/etFrka_fourCasesWest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_bg"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="@string/four_cases_west" />
+
+            <EditText
+                android:id="@+id/etFrka_fourCasesSouth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_bg"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="@string/four_cases_south" />
+
+            <EditText
+                android:id="@+id/etFrka_fourCasesNorth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_bg"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="@string/four_cases_north" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etFrka_fsSurrounding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/fsSurrounding"
+        android:imeOptions="actionNext"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/etFrka_theReasonTube"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/theReasonTube"
+        android:imeOptions="actionNext"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+</LinearLayout>

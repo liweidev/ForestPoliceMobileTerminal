@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.yhkj.jskf.forestpoliceproject.activity.alarm.AlarmApprovalListActivity">
+    
+    <com.yhkj.jskf.forestpoliceproject.widget.HeadTitleView
+        android:id="@+id/htvMain"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/htvMain">
+
+        <LinearLayout
+            android:id="@+id/llNewly"
+            style="@style/alarming_query_list"
+            android:layout_centerHorizontal="true" >
+
+            <ImageView
+                style="@style/main_menu_image"
+                android:src="@drawable/tianjia" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="@string/newly_alarming" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeQueryList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp" >
+
+        <ListView
+            android:id="@+id/lvQueryList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:divider="#000"
+            android:dividerHeight="1dp" >
+
+        </ListView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <com.yhkj.jskf.forestpoliceproject.widget.DateAndTimeInputEditText
+        android:id="@+id/etAfr_rtsfTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/rtsfTime"
+        android:padding="5dp" />
+
+    <com.yhkj.jskf.forestpoliceproject.widget.DateAndTimeInputEditText
+        android:id="@+id/etAfr_efTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/efTime"
+        android:padding="5dp" />
+    
+    <EditText
+        android:id="@+id/etAfr_tfoPlace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/tfoPlace"
+        android:imeOptions="actionNext"
+        android:padding="5dp"
+        android:singleLine="true" >
+        <requestFocus />
+    </EditText>
+    
+
+    <EditText
+        android:id="@+id/etAfr_burnedArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/burnedArea"
+        android:imeOptions="actionNext"
+        android:inputType="numberDecimal"
+        android:padding="5dp"
+        android:singleLine="true" >
+     </EditText>
+
+</LinearLayout>

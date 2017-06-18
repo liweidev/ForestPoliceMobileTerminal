@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+    
+ <com.yhkj.jskf.forestpoliceproject.widget.DateInputEditText
+        android:id="@+id/etKey_populationdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/Inspectdate"
+        android:padding="5dp" />
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content" >
+     
+     <EditText
+            android:id="@+id/etKey_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:hint="@string/name"
+            android:imeOptions="actionNext"
+            android:padding="5dp"
+            android:singleLine="true" />
+     
+     <EditText
+            android:id="@+id/etKey_Nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:layout_marginLeft="5dp"
+            android:hint="@string/nickname"
+            android:imeOptions="actionNext"
+            android:padding="5dp"
+            android:singleLine="true" />
+ </LinearLayout>
+ 
+ <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tvKey_Sex"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="@string/sex"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <RadioGroup
+                android:id="@+id/rgKeySex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal" >
+
+                <!-- <RadioButton
+                    android:id="@+id/rbKey_boy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:checked="true"
+                    android:text="@string/boy" />
+
+                <RadioButton
+                    android:id="@+id/rbKey_girl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/girl" /> -->
+            </RadioGroup>
+        </LinearLayout>
+         <com.yhkj.jskf.forestpoliceproject.widget.DateInputEditText
+        android:id="@+id/etKey_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/date"
+        android:padding="5dp" />
+         
+         <EditText
+        android:id="@+id/etKey_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/keyaddress"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:maxLength="11"
+        android:padding="5dp"
+        android:singleLine="true" />
+         
+         <com.yhkj.jskf.forestpoliceproject.widget.DateInputEditText
+        android:id="@+id/etManage_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/mtime"
+        android:padding="5dp" />
+         
+         <com.yhkj.jskf.forestpoliceproject.widget.DateInputEditText
+        android:id="@+id/etRepeal_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/rtime"
+        android:padding="5dp" />
+         
+<!--          <EditText
+        android:id="@+id/etManage_cause"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/mcause"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:maxLength="11"
+        android:padding="5dp"
+        android:singleLine="true" /> -->
+        <Spinner
+        android:id="@+id/etManage_cause"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:maxLength="11"
+        android:padding="5dp"
+        android:singleLine="true" />
+          <EditText
+        android:id="@+id/etFile_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/filecode"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="11"
+        android:padding="5dp"
+        android:singleLine="true" />
+</LinearLayout>

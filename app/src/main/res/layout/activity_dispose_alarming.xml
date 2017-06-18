@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.yhkj.jskf.forestpoliceproject.activity.DisposeAlarmingActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <com.yhkj.jskf.forestpoliceproject.widget.HeadTitleView
+        android:id="@+id/htvTitles"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+     <RelativeLayout
+        android:id="@+id/rlCategorys"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:background="@android:color/background_light"
+        android:layout_below="@+id/htvTitles" >
+
+        <TextView
+            android:id="@+id/tvAllCategorys"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/background_light"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollViews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:fadingEdge="@null"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/ll_mains"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp" >
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+     <android.support.v4.view.ViewPager
+        android:id="@+id/pagers"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/rlCategorys" >
+    </android.support.v4.view.ViewPager>
+</RelativeLayout>

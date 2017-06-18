@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <com.yhkj.jskf.forestpoliceproject.widget.HeadTitleView
+        android:id="@+id/headTitleView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+    </com.yhkj.jskf.forestpoliceproject.widget.HeadTitleView>
+
+    <LinearLayout
+        android:id="@+id/llNoticeWarning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headTitleView1"
+        android:background="@drawable/edittext_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:visibility="gone" >
+
+        <Spinner
+            android:id="@+id/spDateWarning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.yhkj.jskf.forestpoliceproject.widget.DateAndTimeInputEditText
+            android:id="@+id/etNoticeDateWarning"
+            style="@style/alarm_edittext"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:hint="消息提醒时间"
+            android:padding="15dp" />
+
+        <Button
+            android:id="@+id/btNoticeSaveWarning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/submit_btn_bg"
+            android:padding="15dp"
+            android:text="@string/signature_save"
+            android:textColor="@color/dialog_gray_default" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvWarningPeople"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/llNoticeWarning"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvWarningContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvWarningPeople"
+        android:layout_below="@+id/tvWarningPeople"
+        android:layout_marginTop="20dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/tvWarningContent"
+         android:layout_centerHorizontal="true"
+         android:padding="10dp" 
+        android:layout_marginTop="20dp" >
+
+        <LinearLayout
+            android:id="@+id/llAccessoryList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

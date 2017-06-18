@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <com.yhkj.jskf.forestpoliceproject.widget.DateAndTimeInputEditText
+        android:id="@+id/etInstructionTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/instructionTime"
+        android:inputType="datetime"
+        android:padding="5dp" />
+
+    <com.yhkj.jskf.forestpoliceproject.widget.DateAndTimeInputEditText
+        android:id="@+id/etTimeToReach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/timeToReach"
+        android:inputType="datetime"
+        android:padding="5dp" />
+
+    <EditText
+        android:id="@+id/etAlarmingSituation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/alarmingSituation"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:padding="5dp" />
+
+    <EditText
+        android:id="@+id/etProcessingOpinionLeaders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/alarmOpinionLeaders"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:padding="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/signatureAndDate"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ImageView
+            android:id="@+id/signatureAndDate"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:tag="@string/add"
+            android:background="@drawable/image_add_bg"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_input_add" />
+    </LinearLayout>
+
+</LinearLayout>

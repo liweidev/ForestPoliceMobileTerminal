@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+     >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp" >
+
+        <LinearLayout
+            android:id="@+id/startPatro"
+            style="@style/main_menu_LinearLayout1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/startimg"
+                style="@style/main_menu_image1"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="开始巡逻"
+                android:src="@mipmap/xunluo" />
+
+            <TextView
+                android:id="@+id/kaishixl"
+                style="@style/main_menu_text1"
+                android:text="开始巡逻"
+                android:textColor="#151515" />
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:id="@+id/guardInspection"
+            style="@style/main_menu_LinearLayout1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1" >
+
+            <ImageView
+                style="@style/main_menu_image1"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="巡防检查"
+                android:src="@mipmap/xunfang" />
+
+            <TextView
+                style="@style/main_menu_text1"
+                android:text="巡防检查"
+                android:textColor="#151515" />
+        </LinearLayout>-->
+
+        <!--<LinearLayout
+            android:id="@+id/gatherClues"
+            style="@style/main_menu_LinearLayout1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                style="@style/main_menu_image1"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="线索采集"
+                android:src="@mipmap/xiansuo" />
+
+            <TextView
+                style="@style/main_menu_text1"
+                android:text="线索采集"
+                android:textColor="#151515" />
+        </LinearLayout>-->
+        <LinearLayout
+            android:id="@+id/routeMnage"
+            style="@style/main_menu_LinearLayout1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                style="@style/main_menu_image1"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="路线管理"
+                android:src="@mipmap/luxian" />
+
+            <TextView
+                style="@style/main_menu_text1"
+                android:text="路线管理"
+                android:textColor="#151515" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/xunluo_manager"
+            style="@style/main_menu_LinearLayout1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="visible" >
+
+            <ImageView
+                style="@style/main_menu_image1"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="轨迹查询"
+                android:src="@mipmap/xunluoluxian" />
+
+            <TextView
+                style="@style/main_menu_text1"
+                android:text="轨迹查询"
+                android:textColor="#151515" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal" >
+
+
+
+        <LinearLayout
+            style="@style/main_menu_LinearLayout1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="invisible" >
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <EditText 
+        android:id="@+id/village_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:hint="@string/village_name"
+         android:background="@drawable/edittext_bg"
+         android:padding="5dp"
+         android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        />
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        >
+        <!-- 林地面积(亩) -->
+        <EditText 
+            android:id="@+id/forest_area_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/forest_area"
+            android:background="@drawable/edittext_bg"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:inputType="numberDecimal"
+            android:layout_marginRight="5dp"
+            />
+        <!-- 林地蓄积量 -->
+         <EditText 
+            android:id="@+id/forest_cumulation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/forest_cumulation"
+            android:background="@drawable/edittext_bg"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            />
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+         <!-- 森林的种类 -->
+        <Spinner
+        android:id="@+id/forest_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:imeOptions="actionNext"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:spinnerMode="dialog" />
+        <!-- 林业用地的种类 -->
+         <Spinner
+        android:id="@+id/land_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:imeOptions="actionNext"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:spinnerMode="dialog" />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+         <!-- 树龄组成 -->
+        <Spinner
+        android:id="@+id/tree_age_makeup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:imeOptions="actionNext"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:spinnerMode="dialog" />
+        <!-- 林木种类 -->
+         <Spinner
+        android:id="@+id/woods_type"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:imeOptions="actionNext"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:spinnerMode="dialog" />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+         <!-- 野生动物种类 -->
+        <Spinner
+        android:id="@+id/animal_type"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:imeOptions="actionNext"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:spinnerMode="dialog" />
+        <!--古树名木 -->
+         <Spinner
+        android:id="@+id/old_trees"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:imeOptions="actionNext"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:spinnerMode="dialog" />
+    </LinearLayout>
+    <!-- 涉林案件高发区 -->
+    <EditText 
+            android:id="@+id/lawcase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/lawcase"
+            android:background="@drawable/edittext_bg"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            />
+    <!-- 野生动物主要活动地区 -->
+    <EditText 
+            android:id="@+id/animal_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/animal_activity"
+            android:background="@drawable/edittext_bg"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            />
+    <!-- 野生动物市场 -->
+    <EditText 
+            android:id="@+id/animal_market"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/animal_market"
+            android:background="@drawable/edittext_bg"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            />
+    <!-- 生态管护员情况 -->
+    <EditText 
+            android:id="@+id/zoology_manage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/zoology_manage"
+            android:background="@drawable/edittext_bg"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            />
+    <!-- 放牧养殖户 -->
+     <EditText 
+            android:id="@+id/graze_breed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/graze_breed"
+            android:background="@drawable/edittext_bg"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            />
+     
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        >
+        <!-- 专业数量及人数 -->
+        <EditText 
+            android:id="@+id/specialty_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/specialty_people"
+            android:background="@drawable/edittext_bg"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:layout_marginRight="5dp"
+            />
+        <!-- 半专业数量及人数 -->
+         <EditText 
+            android:id="@+id/halfspecialty_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/halfspecialty_people"
+            android:background="@drawable/edittext_bg"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:layout_marginLeft="5dp"
+            />
+    </LinearLayout>
+    
+    <!-- 重点列管人员 -->
+    <Spinner
+        android:id="@+id/emphasis_manage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:imeOptions="actionNext"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:spinnerMode="dialog" />
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

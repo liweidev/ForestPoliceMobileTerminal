@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <EditText
+        android:id="@+id/etAfwr_tbsName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/tbsName"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/etAfwr_specificLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/specificLocation"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+    <!-- <EditText
+        android:id="@+id/etAfwr_coordinates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/coordinates"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:padding="5dp"
+        android:singleLine="true" /> -->
+
+    <!-- <EditText
+        android:id="@+id/etAfwr_altitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/altitude"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:padding="5dp"
+        android:singleLine="true" /> -->
+
+    <EditText
+        android:id="@+id/etAfwr_wtwSpecifications"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/wtwSpecifications"
+        android:imeOptions="actionNext"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:visibility="gone" />
+
+    <Spinner
+        android:id="@+id/spAfwr_wtwSpecifications"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp" />
+
+    <EditText
+        android:id="@+id/etAfwr_transmission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/transmission"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:visibility="gone" />
+
+    <Spinner
+        android:id="@+id/spAfwr_transmission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp" />
+
+    <com.yhkj.jskf.forestpoliceproject.widget.DateInputEditText
+        android:id="@+id/etAfwr_btTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/btTime"
+        android:imeOptions="actionNext"
+        android:inputType="date"
+        android:padding="5dp" />
+
+</LinearLayout>

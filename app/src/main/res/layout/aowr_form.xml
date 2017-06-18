@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+    
+     <EditText
+            android:id="@+id/spAowr_AccountabilityUnit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:hint="@string/accountabilityUnit"
+            android:imeOptions="actionNext"
+            android:padding="5dp"
+            android:singleLine="true" >
+
+            <requestFocus />
+        </EditText>
+
+    <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <Spinner
+            android:id="@+id/spAowr_CompetentAuthorities"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:spinnerMode="dialog" />
+
+        <EditText
+            android:id="@+id/spAowr_AccountabilityUnit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:hint="@string/accountabilityUnit"
+            android:imeOptions="actionNext"
+            android:padding="5dp"
+            android:singleLine="true" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout> -->
+
+    <EditText
+        android:id="@+id/etAowr_DrAndPn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/drAndPn"
+        android:imeOptions="actionNext"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+    <!-- <EditText
+        android:id="@+id/etAowr_AnimalName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:tag="0"
+        android:hint="@string/animalName"
+        android:imeOptions="actionNext"
+        android:padding="5dp"
+        android:singleLine="true" >
+
+        <requestFocus />
+    </EditText> -->
+    <Spinner
+        android:id="@+id/spAowr_AnimalName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:imeOptions="actionNext"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:spinnerMode="dialog" />
+
+    <Spinner
+        android:id="@+id/spAowr_ProtectionLevel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:imeOptions="actionNext"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:spinnerMode="dialog" />
+    
+    <Spinner
+        android:id="@+id/spAowr_ProtectTheWay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:imeOptions="actionNext"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:spinnerMode="dialog" />
+
+    <EditText
+        android:id="@+id/etAowr_ProtectFileNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/protectFileNum"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+    <requestFocus />
+
+   <!--  <EditText
+        android:id="@+id/etAowr_ProtectTheWay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/protectTheWay"
+        android:imeOptions="actionNext"
+        android:padding="5dp"
+        android:singleLine="true" /> -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <EditText
+            android:id="@+id/etAowr_MapoPersonnel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:hint="@string/mapoPersonnel"
+            android:imeOptions="actionNext"
+            android:padding="5dp"
+            android:singleLine="true" />
+        <requestFocus />
+
+        <EditText
+            android:id="@+id/etAowr_Phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:hint="@string/phone"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:padding="5dp"
+            android:singleLine="true" />
+    </LinearLayout>
+
+</LinearLayout>

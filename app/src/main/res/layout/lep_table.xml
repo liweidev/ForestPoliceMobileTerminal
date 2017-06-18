@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+    
+    
+    <EditText
+        android:id="@+id/etLe_Units"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/pi_jian_units"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:maxLength="100"
+        android:padding="5dp"
+        android:singleLine="true" />
+    
+    <EditText
+        android:id="@+id/etLe_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/pi_jian_phone"
+        android:imeOptions="actionNext"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:padding="5dp"
+        android:singleLine="true" />
+    
+    <Spinner
+        android:id="@+id/etLep_Inspectors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:padding="5dp" />
+    
+    <EditText
+        android:id="@+id/etLe_No"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/pcNo"
+        android:imeOptions="actionNext"
+        android:padding="5dp"
+        android:inputType="number"
+        android:singleLine="true" />
+    
+    <com.yhkj.jskf.forestpoliceproject.widget.DateInputEditText
+        android:id="@+id/dtLe_PcTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/pcTime"
+        android:padding="5dp" />
+    
+     <Spinner
+        android:id="@+id/spLe_Vehicle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:padding="5dp" />
+
+    
+    
+    <!-- <Spinner
+        android:id="@+id/spLe_Unit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:padding="5dp" /> -->
+        
+
+</LinearLayout>

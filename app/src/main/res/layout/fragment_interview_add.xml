@@ -1,0 +1,209 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fadingEdge="vertical"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:context="com.yhkj.jskf.forestpoliceproject.InterviewAddActivity$PlaceholderFragment" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <com.yhkj.jskf.forestpoliceproject.widget.DateInputEditText
+                android:id="@+id/datietInterviewTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_bg"
+                android:ems="10"
+                android:hint="@string/interview_time"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/etInterviewSite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_bg"
+                android:ems="10"
+                android:hint="@string/interview_site"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:singleLine="true" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <!-- <EditText
+                android:id="@+id/etInterviewPolice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_bg"
+                android:ems="10"
+                android:hint="@string/interview_police"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:singleLine="true" >
+                <requestFocus />
+                 -->
+
+			<Spinner
+                android:id="@+id/etInterviewPolice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:singleLine="true" >
+                
+            </Spinner>
+
+            <Spinner
+                android:id="@+id/spInterviewObejct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etInterviewUnitName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:hint="@string/crimes_unit_name"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:padding="5dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/etInterviewUnitAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:hint="@string/unit_address"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:padding="5dp"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/etInterviewName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_bg"
+                android:ems="10"
+                android:hint="@string/name"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/etInterviewAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_bg"
+                android:ems="10"
+                android:hint="@string/age"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:padding="5dp"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/spInterviewGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/etInterviewAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:hint="@string/interview_address"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:padding="5dp"
+            android:singleLine="true" />
+
+         <EditText
+            android:id="@+id/etInterviewManagedCause"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:hint="@string/mcause"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:padding="5dp"
+            android:singleLine="true" /> 
+
+        <EditText
+            android:id="@+id/etInterviewContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="@string/interview_content"
+            android:lines="3"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/etInterviewOpinion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="@string/opinion"
+            android:lines="4"
+            android:padding="5dp" />
+    </LinearLayout>
+</ScrollView>

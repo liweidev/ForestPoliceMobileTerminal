@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <EditText
+        android:id="@+id/etAlarm_receivingAlarmStaff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/receivingAlarmStaff"
+        android:inputType="textMultiLine"
+        android:padding="5dp" />
+
+    <com.yhkj.jskf.forestpoliceproject.widget.DateAndTimeInputEditText
+        android:id="@+id/etReceivingAlarmDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/receivingAlarmTime"
+        android:padding="5dp" />
+
+    <Spinner
+        android:id="@+id/sAlarmMode"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:spinnerMode="dialog" >
+    </Spinner>
+
+    <EditText
+        android:id="@+id/etAlarm_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/alarmContent"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:padding="5dp" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/etAlarm_Opinion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/alarmOpinionLeaders"
+        android:lines="3"
+        android:inputType="textMultiLine"
+        android:padding="5dp" >
+
+        <requestFocus />
+    </EditText>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/tvFpc_PcContents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pcContents"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <GridView
+            android:id="@+id/gvFpc_PcContents"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:numColumns="2" >
+        </GridView>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etFpc_PInspection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/pInspection"
+        android:lines="3"
+        android:padding="5dp" />
+
+    <EditText
+        android:id="@+id/etFpc_signature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/signatureAndDate"
+        android:padding="5dp" >
+
+        <requestFocus />
+    </EditText>
+
+</LinearLayout>

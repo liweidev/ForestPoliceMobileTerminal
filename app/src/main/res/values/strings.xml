@@ -1,0 +1,683 @@
+<resources>
+    <string name="app_name">森林公安综合管理移动终端</string>
+    <string name="action_settings">Settings</string>
+    <string name="network_error">您的网络已经断开，请检查网络!</string>
+    <string name="server_connecttimeout_exception">连接服务器超时，请求失败!</string>
+    <string name="server_data_exception">服务器数据异常!</string>
+    <string name="server_url_error_exception">连接服务器异常，请检查您的服务器连接配置!</string>
+    <string name="server_error">系统发生错误，请求失败!</string>
+    <string name="service_error">服务器地址错误，请重新设置！</string>
+    <string name="request_error">请求发生错误，请求失败!</string>
+    <string name="server_connect_exception">连接服务器异常，请求失败!</string>
+    <string name="unknown_server_name_exception">服务器连接地址不正确连接异常，请求失败!</string>
+    <string name="resolve_data_error">解析数据发生了错误，请耐心等待!</string>
+    <string name="title_activity_login">Sign in</string>
+
+
+    <string name="camera">拍照</string>
+    <string name="photo">从手机相册中选择</string>
+
+    <string name="tv_server_ip">服务器地址：</string>
+    <string name="tv_server_api_ports">客户端端口：</string>
+    <string name="tv_server_web_ports">服务器端口：</string>
+    <string name="tv_server_ips">(内网)服务器地址：</string>
+
+    <string name="net_dialog_yes">确   定</string>
+
+
+    <string name="safet_precautions_3">野生动物情况登记</string>
+    <string name="safet_precautions_4">重点保护植物情况登记</string>
+    <string name="basic_account_childmenu_3">重点列管人（单位）情况</string>
+    <string name="basic_account_childmenu_12">涉林重点行业情况登记</string>
+    <string name="basic_account_childmenu_8">林地内开采沙、土、石、矿情况登记</string>
+    <string name="basic_account_childmenu_9">木材采伐场（点）登记</string>
+    <string name="basic_account_childmenu_10">情报信息登记</string>
+    <string name="basic_account_childmenu_11">社会情况统计</string>
+
+    <string name="security_management_2">派出所林区治安管理检查登记</string>
+
+    <string name="law_enforcement_3">林区治安防控巡逻检查</string>
+    <string name="law_enforcement_1">新增报警信息</string>
+    <string name="law_enforcement_2">我的案件</string>
+    <string name="law_enforcement_4">处警信息</string>
+    <string name="law_enforcement_5">处警审批</string>
+    <string name="law_enforcement_6">公安处审批</string>
+    <string name="law_enforcement_7">处理结果</string>
+    <string name="law_enforcement_8">询问笔录</string>
+
+
+    <string name="welcome">您好！</string>
+    <string name="btIntranet">局域网</string>
+    <string name="logo">软件Logo</string>
+    <string name="gps">定位</string>
+    <string name="signature_save">保存</string>
+    <string name="signature_update">修改</string>
+    <string name="signature_clear">清除</string>
+    <string name="signature_synchronous">同步</string>
+    <string name="vudio">录像</string>
+    <string name="record">录音</string>
+    <string name="sex">性别</string>
+    <string name="boy">男</string>
+    <string name="girl">女</string>
+    <string name="add">添加</string>
+    <string name="note">备\t\t\t注</string>
+    <string name="str_toast_net">请检查网络</string>
+    <string name="net_dialog_title">当前没有可以使用的网络，请设置网络！</string>
+    <string name="net_dialog_content">网络状态提示</string>
+    <string name="security">开始巡逻</string>
+    <string name="stopsecurity">结束巡逻</string>
+    <string name="search">搜索</string>
+    <string name="search_nearby">搜索附近</string>
+    <string name="search_animal">动物名称</string>
+    <string name="search_plant">植物名称</string>
+    <string name="search_part_name">重点部位名称</string>
+    <string name="search_part_siting">坐落地点</string>
+    <string name="search_managed_object">姓名或单位名称</string>
+    <string name="add_animal">新增重点保护动物</string>
+    <string name="add_parts">新增重点部位</string>
+    <string name="add_plant">新增重点保护植物</string>
+    <string name="add_managed_object">新增重点列管人员</string>
+    <string name="dialog_message_loading">努力加载中！请稍候……</string>
+    <string name="dialog_message_updateOption">正在更新数据包！请稍候……</string>
+    <string name="toast_message_updateOption">数据包更新成功！</string>
+    <string name="toast_message_updateOption_error">数据包更新失败！</string>
+    <string name="dialog_message_uploaded">已上传至服务器！</string>
+    <string name="dialog_message_upload">数据上传中！请稍侯……</string>
+    <string name="toast_message_upload_failure">上传数据失败！已经保存到本地数据库！</string>
+    <string name="toast_message_upload_netException">网络异常！已经保存到本地数据库！</string>
+    <string name="toast_message_Abnormal_server">服务器异常！请稍候再试……</string>
+    <string name="toast_message_no_data">没有查到您要的数据！</string>
+    <string name="toast_message_no_law">没有查到您要的法律法规！</string>
+    <string name="toast_message_no_Onduty">没有今天的值班记录！</string>
+    <string name="toast_message_netException">网络异常！请检查网络设置或稍候再试！</string>
+    <string name="toast_message_no_news">没有发送给您的消息！</string>
+    <!-- 潭柘寺 -->
+    <string name="tanzhesi">三情</string>
+    <string name="linqing">林情</string>
+    <string name="shanqing">山情</string>
+    <string name="sheqing">社情</string>
+    <string name="addlinqing">新增林情</string>
+    <string name="addshanqing">新增山情</string>
+    <string name="addsheqing">新增社情</string>
+    <!-- 林情 -->
+
+    <string name="forest_area">林地面积(亩)</string>
+    <string name="forest_cumulation">林地蓄积量</string>
+    <string name="lawcase">涉林案件高发区</string>
+    <string name="animal_activity">野生动物主要活动地区</string>
+    <string name="animal_market">野生动物市场</string>
+    <string name="zoology_manage">生态管护员情况</string>
+    <string name="graze_breed">放牧养殖户</string>
+    <string name="specialty_people">专业数量及人数</string>
+    <string name="halfspecialty_people">半专业数量及人数</string>
+    <string name="emphasis_manage">重点列管人员</string>
+    <string name="forest_type">森林的种类</string>
+    <string name="village_name">辖区名称</string>
+    <!-- 山情 -->
+    <string name="allarea">行政区域总面积(公顷)</string>
+    <string name="elevation">海拔</string>
+    <string name="terrain">地形地貌</string>
+    <string name="coordinate">经纬度</string>
+    <string name="region">截然地区(四至)</string>
+    <string name="location">河流湖泊位置</string>
+    <string name="oreresources">矿产资源分布</string>
+    <string name="specialty">地区特产</string>
+    <string name="trafficroad">交通道路分布</string>
+    <!-- 社情 -->
+    <string name="resident">居民人口数</string>
+    <string name="stay">暂住人口数</string>
+    <string name="permanent">行政村常住人口数</string>
+    <string name="trafficcondition">交通分布情况</string>
+    <string name="custom">清明节扫墓时间及风俗</string>
+    <string name="culturalrelic">文物古迹</string>
+    <string name="repast">主要餐饮业情况</string>
+    <string name="income">主要产业及经济来源</string>
+    <string name="patients">呆、傻精神病人情况</string>
+    <string name="produce">特色物产</string>
+    <string name="contact">村领导干部及联系方式</string>
+    <string name="bycontract">土地承包情况</string>
+    <!-- 接处警 -->
+    <string name="approval">审批</string>
+    <string name="next">提交</string>
+    <string name="alarm_id_card">身份证号：</string>
+    <string name="alarm_phone">联系方式：</string>
+    <string name="alarm_age">年龄：</string>
+    <string name="alarm_sex">性别：</string>
+    <string name="alarm_nation">民族：</string>
+    <string name="alarm_address">暂住地址：</string>
+    <string name="alarm_1">报警信息</string>
+    <string name="alarm_2">出警审批</string>
+    <string name="alarm_3">处警信息</string>
+    <string name="alarm_4">附件及备注</string>
+    <string name="alarm_5">处警部门意见</string>
+    <string name="alarm_6">公安处意见</string>
+    <string name="alarm_7">处理结果</string>
+    <string name="organized_police">主办民警：</string>
+    <string name="co_police">协办民警：</string>
+    <string name="police_opinion">出警意见：</string>
+    <string name="dispose_alarm">处警信息</string>
+    <string name="suspicion_person">嫌疑人信息</string>
+    <string name="case_idea">简要情况及意见</string>
+    <string name="admin_idea_image">处警部门意见</string>
+    <string name="instruction_date_time"> 接到处警 \t\n  指令时间：</string>
+    <string name="time_to_reach">确定到达警情现场</string>
+    <string name="suspect_name">嫌疑人姓名：</string>
+    <string name="alarming_opinion">处理意见：</string>
+    <string name="alarm_first_content">初查简要情况\n(时间、地点、\n人员、事实\n经过等)：</string>
+    <string name="prisoner_culture">文化程度：</string>
+    <string name="prisoner_unit">工作单位：</string>
+    <string name="prisoner_address">住址：</string>
+    <string name="prisoner_unitname">单位名称：</string>
+    <string name="prisoner_unitaddress">地址：</string>
+    <string name="legal_person">法定代表人：</string>
+    <string name="prisoner_job">职务：</string>
+    <string name="alarming_note">备注：</string>
+    <!-- 人口管理 -->
+    <string name="people_management">人口管理</string>
+    <string name="people_management_1">辖区暂住人口登记</string>
+    <string name="people_management_2">辖区重点人口登记</string>
+
+    <!-- 治安管理 -->
+    <string name="security_management">巡防检查</string>
+    <string name="security_management_1">林区治安巡逻登记</string>
+
+    <!-- 安全防范 -->
+    <string name="safet_precautions">治安管理</string>
+    <string name="safet_precautions_1">林情基本情况登记</string>
+    <string name="safet_precautions_2">重点部位登记</string>
+
+    <!-- 执法办案 -->
+    <string name="law_enforcement">执法办案</string>
+    <!--
+    <string name="law_enforcement_1">派出所接警情况登记</string>
+    <string name="law_enforcement_2">派出所处警情况登记</string>
+    <string name="law_enforcement_4">派出所接警及处警情况登记</string>
+
+
+
+    -->
+
+    <!-- 防火工作 -->
+    <string name="fire_prevention">防火工作</string>
+    <string name="fire_prevention_1">发生火情登记</string>
+    <string name="fire_prevention_2">违法用火行为人登记</string>
+    <string name="fire_prevention_3">防火巡逻检查</string>
+    <string name="fire_prevention_4">辖区瞭望塔登记</string>
+    <string name="fire_prevention_5">辖区防火重点部位登记</string>
+
+    <!-- 巡防路线管理 -->
+    <string name="patrol_route_management">路线管理</string>
+    <string name="patrol_route_management_name">路线名称</string>
+    <string name="patrol_route_management_pavement_properties">路面性质</string>
+    <string name="start">开始记录</string>
+    <string name="stop">停止记录</string>
+    <string name="continue_to">继续记录</string>
+
+    <!-- 工作日志 -->
+    <string name="the_working_log">工作日志</string>
+    <string name="the_working_log_date">当天日期</string>
+    <string name="police_on_duty">值班民警</string>
+    <string name="class_leaders">带班领导</string>
+    <string name="the_main_work_and_important_events">主要工作情况及重要事件</string>
+
+    <!-- 信息查询 -->
+    <string name="query_information">信息查询</string>
+    <string name="query_information_1">法律法规</string>
+    <string name="query_information_2">重点单位</string>
+    <string name="query_information_3">重点保护野生动物</string>
+    <string name="query_information_4">重点保护野生植物</string>
+
+    <!-- 接处警相关 -->
+    <string name="etPrisoner_Unit">工作单位</string>
+    <string name="etPrisoner_Address">住址</string>
+    <string name="etPrisoner_UnitName">单位名称</string>
+    <string name="etPrisoner_UnitAddress">地址</string>
+    <string name="etLegal_Person">法定代表人</string>
+    <string name="PrisonerCulture">文化程度</string>
+    <string name="spPrisoner_Job">职务</string>
+    <string name="sAlarmMode">接警方式：</string>
+    <string name="etAlarm_FirstContent">初查简要情况(时间、地点、人员、事实经过等)</string>
+    <string name="Alarm_Nation">民族</string>
+    <string name="Alarm_Opinion">处警民警意见</string>
+    <string name="etFirst_endTime">初查结束时间</string>
+    <string name="etAlarm_Time">处警警民警意见填写时间</string>
+    <string name="etAlarmL_Time">部门负责人意见填写时间</string>
+    <string name="Responsible">处警部门负责人意见</string>
+    <string name="PolicePrincipal">森林公安机关负责人批示</string>
+    <string name="apAdvice">领导建议</string>
+    <string name="alarmPeoples">处警人员</string>
+    <string name="writeForPerson">填写人</string>
+    <string name="signForPerson">签收人</string>
+    <string name="arriveSiteTimes">到达现场的时间</string>
+    <string name="signTime">时间</string>
+    <string name="receivingAlarmStaff">接警人员</string>
+    <string name="receivingAlarmTime">接警时间：</string>
+    <string name="alarmName">报警人姓名：</string>
+    <string name="alarmMode">报警方式</string>
+    <string name="alarmContent">报警内容：</string>
+    <string name="content">详细内容</string>
+    <string name="alarmOpinionLeaders">领导意见</string>
+    <string name="processingResults">处理结果</string>
+    <string name="Transfer">接受单位</string>
+    <string name="alarmTimes">处警时间</string>
+    <string name="receive">接受时间</string>
+    <string name="etOrder">接到指令时间</string>
+    <string name="alarming_staff">处警人员</string>
+    <string name="etOutAlarmPerson">处警人员</string>
+    <string name="instructionDate">收到出警指令日期</string>
+    <string name="instructionTime">接到处警指令时间</string>
+    <string name="dateToReach">到达警情现场日期</string>
+    <string name="timeToReach">到达警情现场时间</string>
+    <string name="alarmingSituation">处警情况及意见</string>
+    <string name="signatureAndDate">签字</string>
+    <string name="signatureAndDateTime">签字时间</string>
+    <string name="police">处警人员</string>
+    <string name="organizedPolice">主办民警信息</string>
+    <string name="Co_police">协办民警信息</string>
+    <string name="PIBriefCase">处警情况及意见</string>
+    <string name="PIEndTime">初查结束时间</string>
+    <string name="instruction_time">负责人批示时间</string>
+    <string name="leadIdea">领导意见</string>
+    <string name="diaposeResult">处理结果</string>
+    <string name="aprfComments">处警单位负责人意见</string>
+    <string name="fpsoInstructions">森林公安机关负责人批示</string>
+    <string name="crown_case_no">刑事案件立案编号</string>
+    <string name="administrative_case_no">行政案件立案编号</string>
+    <string name="etAlarm_PoseResult">处理结果</string>
+    <!-- title activity -->
+    <string name="title_activity_receive_alarm">受理报警登记</string>
+    <string name="title_activity_receive_section1">基本信息</string>
+    <string name="title_activity_receive_section2">报警人</string>
+    <string name="title_activity_receive_section3">处警信息</string>
+    <string name="title_activity_receive_section4">其他信息</string>
+    <string name="title_activity_forest_patrol_work">林区巡逻工作情况</string>
+    <string name="title_activity_forest_patrol_section1">基本信息</string>
+    <string name="title_activity_forest_patrol_section2">情况分析与意见</string>
+    <string name="title_activity_public_security_management">派出所治安管理检查</string>
+    <string name="title_activity_public_security_management_section1">被检单位（出租屋）信息</string>
+    <string name="title_activity_public_security_management_section2">问题及意见</string>
+    <string name="title_activity_transient_population_register">辖区暂住人口登记</string>
+    <string name="title_activity_key_population">辖区重点人口登记</string>
+    <string name="title_activity_basic_information">基本信息</string>
+    <string name="title_activity_remarks_and_accessories">备注与附件</string>
+    <string name="title_activity_accessories">附件</string>
+    <string name="title_activity_alarming_work_registration_section2">违法犯罪人信息</string>
+    <string name="title_activity_alarming_work_registration_section3">初查情况与意见</string>
+    <string name="title_activity_lin_affairs_investigation">林情基本情况登记</string>
+    <string name="title_activity_registration_key_positions">重点部位基本情况登记</string>
+    <string name="title_activity_registration_key_positions_sction2">重点部位详情</string>
+    <string name="title_activity_register_protected_animals">野生动物情况登记</string>
+    <string name="title_activity_registration_key_protected_plants">重点保护植物情况登记</string>
+    <string name="title_activity_alarming_work_registration">处警工作登记</string>
+    <string name="title_activity_registration_area_fire">辖区火情登记</string>
+    <string name="title_activity_illegal_use_of_fire_register">违法用火行为人登记</string>
+    <string name="title_activity_fire_patrol_inspection">防火巡逻检查</string>
+    <string name="title_activity_fire_patrol_inspection_section1">被检单位信息</string>
+    <string name="title_activity_fire_patrol_inspection_section2">检查内容及情况</string>
+    <string name="title_activity_fire_watchtower_registration">辖区防火瞭望塔登记</string>
+    <string name="title_activity_registration_key_areas_fire">防火重点地区登记</string>
+    <string name="title_activity_alarm_people_information">报警信息</string>
+    <string name="title_activity_accept_information">审批</string>
+    <string name="title_activity_alarm_information">处警信息</string>
+    <string name="title_activity_alarm_out_police_information">出警信息</string>
+    <string name="title_activity_dispose_alarm_information">接处警信息</string>
+    <string name="title_activity_illegal_people_information">违法人信息</string>
+    <string name="tittle_activity_first_consultation">初查情况及意见</string>
+    <string name="title_activity_dispose_result">处警情况及意见</string>
+    <string name="title_activity_woodcutting_two">检查情况与附件</string>
+    <string name="title_activity_itelligence_two">意见反馈与附件</string>
+    <!-- 暂住人口基本信息 -->
+    <string name="name">姓名</string>
+    <string name="Inspectdate">时间</string>
+    <string name="date">出生日期</string>
+    <string name="address">暂住地址</string>
+    <string name="IndustryName">从事行业</string>
+    <string name="hukou">户口所在地</string>
+    <string name="id_card">身份证号</string>
+    <string name="phone">联系方式</string>
+    <string name="arrival_time">到达时间</string>
+    <string name="departure_time">离开时间</string>
+
+    <!-- 辖区重点人口情况登记表 -->
+    <string name="nickname">绰号</string>
+    <string name="keyaddress">住址或服务处所</string>
+    <string name="mtime">列管时间</string>
+    <string name="rtime">撤管时间</string>
+    <string name="mcause">列管原因</string>
+    <string name="filecode">档案编号</string>
+
+    <!-- 报警人信息 -->
+    <string name="age">年龄</string>
+    <string name="education">文化程度</string>
+    <string name="alarm_nationality">民族</string>
+    <string name="alarm_mode_2">来信</string>
+    <string name="alarm_mode_1">电话报警</string>
+    <string name="alarm_mode_3">来访</string>
+    <string name="alarm_mode_4">110转</string>
+    <string name="alarm_mode_5">工作中发现</string>
+    <string name="title_activity_laws_regulations">法律法规</string>
+    <string name="title_activity_laws_regulation_detail">法律法规</string>
+    <string name="title_activity_alarm">报警</string>
+    <string name="direction_0">请选择方向！！！</string>
+    <string name="direction_1">东</string>
+    <string name="direction_2">南</string>
+    <string name="direction_3">西</string>
+    <string name="direction_4">北</string>
+    <string name="direction_5">东南</string>
+    <string name="direction_6">东北</string>
+    <string name="direction_7">西南</string>
+    <string name="direction_8">西北</string>
+    <string name="title_activity_news_push">新闻公告</string>
+    <string name="title_activity_news_details">新闻</string>
+    <string name="news">新闻公告</string>
+    <string name="note_activity_main">便\t\t\t签</string>
+
+    <!-- 违法犯罪人基本信息 -->
+    <string name="crimes_name">姓名</string>
+    <string name="crimes_unit">工作单位</string>
+    <string name="crimes_address">住址</string>
+    <string name="crimes_unit_name">单位名称</string>
+    <string name="crimes_add">地址</string>
+    <string name="crimes_legal_representative">法定代表人</string>
+
+    <!-- 林区治安巡逻登记 -->
+    <string name="beginDate">开始日期</string>
+    <string name="beginTime">开始时间</string>
+    <string name="endDate">结束日期</string>
+    <string name="endTime">结束时间</string>
+    <string name="patrolPolice">巡逻民警</string>
+    <string name="patrolRoute">巡逻路线</string>
+    <string name="patrolChronicle">巡逻记事</string>
+    <string name="analysisOfDisposal">研判分析处置情况</string>
+    <string name="shiftLeadershipOpinion">带班领导意见</string>
+
+    <!-- 派出所治安管理检查登记 -->
+    <string name="unitName">单位名称</string>
+    <string name="unitAdd">经营地点</string>
+    <string name="legalRepresentative">法人代表</string>
+    <string name="head">负责人</string>
+    <string name="businessProject">经营项目</string>
+    <string name="businessPractice">经营方式</string>
+    <string name="checkTheTime">检查时间</string>
+    <string name="inspectors">检查人员</string>
+    <string name="contentAndProblems">检查内容及存在问题</string>
+    <string name="rectificationOpinions">整改意见</string>
+    <string name="ownerOrHead">业主或负责人意见</string>
+    <!-- 林情调查 -->
+    <string name="number">小班号</string>
+    <string name="area">面 积(亩)</string>
+    <string name="forestLandTypes">林地类型</string>
+    <string name="treeSpecies">主要树种</string>
+    <string name="averageAge">平均树龄</string>
+    <string name="forestTypes">林种></string>
+    <string name="landTypes">地种</string>
+    <string name="forestOwnership">林木权属</string>
+    <string name="propertyinland">土地所有权</string>
+    <string name="businessType">经营类型</string>
+
+    <!-- 重点部位登记 -->
+    <string name="the_key_unit_name">重点单位（部位）名称</string>
+    <string name="responsible_phone">联系电话</string>
+    <string name="year">年度</string>
+    <!-- 重点保护动物登记 -->
+    <string name="competent_authorities">主管部门</string>
+    <string name="accountabilityUnit">责任单位</string>
+    <string name="animalName">动物名称</string>
+    <string name="drAndPn">分布具体范围及地点名称</string>
+    <string name="protectionLevel">保护级别</string>
+    <string name="protectFileNum">保护档案编号</string>
+    <string name="protectTheWay">保护方式</string>
+    <string name="mapoPersonnel">管护人员</string>
+    <!-- 重点保护植物登记 -->
+    <string name="comOrSLNumber">具体分布地点或林班号小班号</string>
+    <string name="plantNames">植物名称</string>
+    <string name="treeAge">树龄</string>
+    <string name="Status">现状</string>
+    <string name="Feature">特征</string>
+    <string name="TreesNum">档案编号</string>
+    <string name="noOriginalListing">原挂牌号</string>
+    <!-- 发生火情登记 -->
+    <string name="rtsfTime">到达火情现场时间</string>
+    <string name="efTime">扑灭明火时间</string>
+    <string name="tfoPlace">发生火情地点</string>
+    <string name="burnedArea">过火面积</string>
+
+    <!-- 违法用火行为人登记 -->
+    <string name="violator">违法行为人</string>
+    <string name="luofTime">违法用火时间</string>
+    <string name="penaltiesTime">处罚时间</string>
+    <!-- 防火巡逻检查 -->
+    <string name="pcTime">检查时间</string>
+    <string name="pcRoutes">检查路线、地点</string>
+    <string name="pInspectors">检查人员</string>
+    <string name="pcContents">检查内容</string>
+    <string name="pcNo">编号</string>
+    <string name="pInspection">检查意见</string>
+    <string name="rectification_results">整改结果</string>
+    <string name="pi_jian_phone">被检单位电话</string>
+    <string name="pi_jian_units">被检查单位</string>
+    <!-- 执法办案-巡逻检查 -->
+    <string name="le_vehicle">检查车辆</string>
+    <string name="le_situation">检查情况（时间，路线，地点）</string>
+    <!-- 辖区防火瞭望塔登记表 -->
+    <string name="tbsName">基站名称</string>
+    <string name="specificLocation">具体位置</string>
+    <string name="coordinates">经纬度</string>
+    <string name="altitude">海拔高度</string>
+    <string name="wtwSpecifications">瞭望塔规格</string>
+    <string name="transmission">传输方式</string>
+    <string name="btTime">建塔时间</string>
+    <!-- 辖区防火重点部位登记 frka_form -->
+    <string name="frka_name">名称</string>
+    <string name="siting">坐落地点</string>
+    <string name="details">详细信息</string>
+    <string name="personInCharge">负责人</string>
+    <string name="headOfSecurity">安全负责人</string>
+    <string name="employees">职工人数</string>
+    <string name="traffic">交通情况</string>
+    <string name="latLonAltitude">经纬度及海拔</string>
+    <string name="scopeAndNature">经营范围及性质</string>
+    <string name="fourCases">四至情况</string>
+    <string name="four_cases_east">东至</string>
+    <string name="four_cases_west">西至</string>
+    <string name="four_cases_south">南至</string>
+    <string name="four_cases_north">北至</string>
+    <string name="fsSurrounding">周边林情</string>
+    <string name="theReasonTube">列管原因</string>
+    <string name="title_activity_image_show">图片选择</string>
+    <string name="title_activity_image_show_del">删除</string>
+    <string name="title_activity_animal_details">野生动物情况登记表</string>
+    <string name="title_activity_animal_information">重点保护动物</string>
+    <string name="title_activity_receive_alarms">接警及处警登记</string>
+    <string name="title_activity_plant_protectt">重点保护植物情况登记表</string>
+    <string name="title_activity_plant_protectt_detail">重点保护植物</string>
+    <string name="title_activity_key_parts">重点部位</string>
+    <string name="title_activity_key_parts_detail">重点部位</string>
+    <string name="title_activity_law_enforcement_patrol">林区治安</string>
+    <string name="title_activity_notice">消息</string>
+    <string name="title_activity_bingo_photo_album">相册</string>
+    <string name="photp_yes">确定</string>
+    <string name="title_activity_note">便签</string>
+    <string name="title_activity_note_new">新增便签</string>
+    <string name="note_contentIsNull">请输入便签内容！</string>
+    <string name="title_activity_patrol_route_management">新增路线</string>
+    <string name="title_activity_patrol_route_information">路线管理</string>
+    <string name="title_activity_patrol_route_information_detail">路线查询</string>
+    <string name="location_sim">此功能包含定位服务，请您插入SIM卡 ！</string>
+    <string name="hint">网络异常！已经保存到本地数据库！请在网络条件良好后与服务器同步！</string>
+    <string name="settings">确定</string>
+    <string name="dialog_yes">取消</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="title_activity_map">线路显示</string>
+    <string name="title_activity_the_working_log">工作日志</string>
+    <string name="title_activity_synchronous_list">同步列表</string>
+    <string name="lan_wifi">您已切换至本地WIFI状态</string>
+    <string name="lan_net">您已切换至3G/4G网络模式</string>
+    <string name="main_menu_title_1">基础台帐</string>
+    <string name="basic_account_childmenu_4">重点列管人走访</string>
+    <string name="basic_account_childmenu_5">护林基本力量登记</string>
+    <string name="basic_account_childmenu_6">养殖情况登记</string>
+    <string name="basic_account_childmenu_7">盘问情况登记</string>
+    <string name="title_activity_onduty">值班表</string>
+
+    <!-- 基础台账.养殖情况 -->
+    <string name="breed_time">信息采集时间</string>
+    <string name="breed_unit">单位名称</string>
+    <string name="breed_name">养殖户名称</string>
+    <string name="breed_count">存栏数</string>
+    <string name="breed_type">重要种类</string>
+    <string name="breed_way">养殖方式</string>
+    <string name="breed_remark">备注</string>
+    <string name="title_breed_menu">养殖情况登记</string>
+    <string name="title_query_breed">养殖情况查询</string>
+
+    <!-- 护林基本力量 -->
+    <string name="title_activity_forest_potection">护林基本力量</string>
+    <string name="title_activity_forest_potection_query">护林基本力量</string>
+    <string name="forest_potection_management_area">管护责任区</string>
+    <!-- 涉林重点行业情况 -->
+    <string name="title_activity_forestry_key_industries_query">涉林重点行业情况</string>
+    <string name="forestry_key_industries_license">证照</string>
+    <string name="forestry_key_industries_operate_type">经营行业、种类、名称</string>
+    <string name="forestry_key_industries_principal">负责人及联系方式</string>
+    <string name="forestry_key_industries_contact_information">管理人及联系方式</string>
+    <string name="forestry_key_industries_varieties_sourcess">品种来源</string>
+    <string name="forestry_key_industries_practitioner_number">行业人员数量</string>
+    <!-- 盘问情况 -->
+    <string name="title_activity_questioned_situation_add">盘问情况</string>
+    <string name="title_activity_questioned_situation_query">盘问情况</string>
+    <string name="asked_people_name">被盘问人姓名</string>
+    <string name="birthday">出生年月</string>
+    <string name="unit_or_address">单位或住址</string>
+    <string name="ask_why">继续盘问原因</string>
+    <string name="ask_begin_time">继续盘问开始时间</string>
+    <string name="ask_end_time">继续盘问结束时间</string>
+    <string name="sponsor">主办人</string>
+    <string name="overtime">延长时间</string>
+    <string name="allow">上级机关批准人</string>
+    <string name="handingInformation">处理情况</string>
+
+    <!-- 情报信息 -->
+    <string name="itelligence_time">收集时间</string>
+    <string name="itelligence_source">信息来源</string>
+    <string name="itelligence_abstract">信息摘要</string>
+    <string name="itelligence_unit">上报单位</string>
+    <string name="itelligences_time">上报时间</string>
+    <string name="itelligences_feedback">意见反馈</string>
+    <string name="title_itelligence_menu">情报信息</string>
+    <string name="title_Itelligence_query">情报信息查询</string>
+    <string name="title_Itelligence_main">情报信息登记</string>
+
+    <!-- 林地内开采沙、土、石、矿情况表 -->
+    <string name="specificlocation">具体位置</string>
+    <string name="miningarea">开采面积(亩)</string>
+    <string name="fallimentidello">破坏林木情况</string>
+    <string name="allowunit">批准部门</string>
+    <string name="title_woodland_query">林地内开采沙、土、石、矿情况查询</string>
+    <string name="title_woodland_mian">林地内开采沙、土、石、矿情况登记</string>
+
+    <!-- 木材采伐场（点）登记表 -->
+    <string name="cuttingunit">采伐单位或个人</string>
+    <string name="cuttinglocation">采伐地点</string>
+    <string name="cuttingcardid">采伐证号</string>
+    <string name="allowcount">批准采伐数量</string>
+    <string name="cuttingspecies">采伐树种</string>
+    <string name="cuttingmode">采伐方式</string>
+    <string name="cuttingcount">进入林区采伐人员数</string>
+    <string name="cuttingbegintime">开始采伐时间</string>
+    <string name="cuttingendtime">采伐结束时间</string>
+    <string name="inspection">检查情况</string>
+    <string name="title_woodcutting_query">木材采伐场（点）查询</string>
+    <string name="title_woodcutting_main">木材采伐场（点）登记</string>
+
+    <!-- 重点列管人员（单位）情况表 -->
+    <string name="title_activity_managed_object_query">重点列管人员（单位）情况</string>
+    <string name="title_activity_managed_object_add">重点列管人员（单位）情况</string>
+    <string name="unit_name">姓名或单位名称</string>
+    <string name="domicile_place">户籍地</string>
+    <string name="card_id">身份证或者执照号码</string>
+    <string name="address_or_unit">现住址或单位</string>
+    <string name="specific_causes">何时何因被何部门给何处罚</string>
+    <string name="managed_time">列管时间</string>
+    <string name="responsibility_police">负责民警</string>
+
+    <!-- 社会情况统计表 -->
+    <string name="unit">单位名称</string>
+    <string name="totalarea">总面积（平方千米）</string>
+    <string name="familycount">户数合计</string>
+    <string name="agriculturefamily">农业户</string>
+    <string name="nonagriculturalfamily">非农户</string>
+    <string name="protectfamily">重点保护户</string>
+    <string name="temporaryfamily">外来临时户</string>
+    <string name="populationcount">人口合计</string>
+    <string name="arriculturepopulation">农业人口</string>
+    <string name="nonarriculturealpopulation">非农业人口</string>
+    <string name="temporarypopulation">流动人口</string>
+    <string name="emphasisunitcount">重点单位合计</string>
+    <string name="woodprocessingunit">木材加工</string>
+    <string name="woodpurchaseunit">木材收购</string>
+    <string name="quarryingunit">采石</string>
+    <string name="collieryunit">煤矿</string>
+    <string name="flaystoneunit">石板</string>
+    <string name="wildanimalunit">野生动物经营</string>
+    <string name="travelunit">旅游区</string>
+    <string name="contractor">承包人</string>
+    <string name="principal">学校校长</string>
+    <string name="grazingpersonnel">放牧人员</string>
+    <string name="employer">雇主</string>
+    <string name="gravemaster">坟主</string>
+    <string name="moronismmanager">呆傻监护人</string>
+    <string name="title_socialstatistics_users">户数</string>
+    <string name="title_socialstatistics_population">人口</string>
+    <string name="title_socialstatistics_keyunits">重点单位</string>
+    <string name="title_socialstatistics_sixdefferentpeople">六种人</string>
+    <string name="title_accessory">附件</string>
+    <string name="title_socialstatistics_query">社会情况查询</string>
+
+    <!-- 重点列管人员走访 -->
+    <string name="title_activity_interview_query">重点列管人员走访</string>
+    <string name="title_activity_interview_add">重点列管人员走访</string>
+    <string name="interview_time">走访时间</string>
+    <string name="interview_site">走访地点</string>
+    <string name="interview_police">走访民警</string>
+    <string name="interview_obejct">走访对象</string>
+    <string name="unit_address">单位地址</string>
+    <string name="interview_address">家庭住址</string>
+    <string name="interview_content">走访内容</string>
+    <string name="opinion">走访对象意见或建议及反映的其它问题</string>
+    <string name="title_activity_the_working_log_query">工作日志</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="newly_alarming">新增接处警</string>
+    <string name="alarming_person">接警人：</string>
+    <string name="alarming_call">报警人：</string>
+    <string name="alarming_time">接警时间：</string>
+    <string name="alarming_state">状态：</string>
+    <string name="alarming_sure">查询</string>
+    <string name="alarming_number">编号：</string>
+    <string name="title_activity_receive_and_dispose_alarm">ReceiveAndDisposeAlarmActivity</string>
+    <string name="title_activity_managed_object_list">ManagedObjectListActivity</string>
+    <string name="title_activity_warning">WarningActivity</string>
+    <string name="title_activity_warning_detail">WarningDetailActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="alarm_details">详情</string>
+    <string name="agree">同意</string>
+    <string name="disagree">不同意</string>
+    <string name="ideas">请您填写意见：</string>
+    <string name="dispose_result">处理结果：</string>
+    <string name="decive_unit">接收单位：</string>
+    <string name="alarming_times">接收时间：</string>
+    <string name="criminal_case_number">刑事立案编号：</string>
+    <string name="admin_case_number">行政立案编号：</string>
+    <string name="alarm_finish">完成</string>
+    <string name="not_null">必填*</string>
+    <string name="agreees">同意出警调查，由：</string>
+    <string name="blames">负责。</string>
+
+    <!-- 设置 -->
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="tv_server_api_port">(外网)客户端端口：</string>
+    <string name="tv_server_web_port">(外网)服务器端口：</string>
+    <string name="title_activity_notice_detail">NoticeDetailActivity</string>
+
+    <string name="update_date_under_wifi">此应用需要下载数据包，请打开wifi网络后重新登录下载数据包</string>
+</resources>

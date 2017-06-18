@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <Spinner
+        android:id="@+id/spAokukpotbr_year"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:spinnerMode="dialog" />
+
+    <EditText
+        android:id="@+id/etAokukpotbr_theKeyUnitName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:gravity="top"
+        android:tag="0"
+        android:hint="@string/the_key_unit_name"
+        android:lines="1"
+        android:padding="5dp" >
+    </EditText>
+
+
+        <EditText
+            android:id="@+id/etAokukpotbr_Details"
+            android:layout_width="match_parent"
+        android:layout_marginTop="10dp" 
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:hint="@string/siting"
+            android:imeOptions="actionNext"
+            android:padding="5dp"
+            android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/etAokukpotbr_PersonInCharge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/personInCharge"
+        android:imeOptions="actionNext"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/etAokukpotbr_HeadOfSecurity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/headOfSecurity"
+        android:imeOptions="actionNext"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/etAokukpotbr_Employees"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/employees"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/etAokukpotbr_ResponsiblePhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/responsible_phone"
+        android:imeOptions="actionNext"
+        android:padding="5dp"
+        android:inputType="phone"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/etAokukpotbr_MtcotSituation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/area"
+        android:imeOptions="actionNext"
+        android:inputType="numberDecimal"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+</LinearLayout>

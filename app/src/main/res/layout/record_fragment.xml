@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TextView
+	    android:id="@+id/num_name"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:paddingTop="14dp"
+	    android:layout_alignParentTop="true"
+	    android:textSize="18sp"
+	    android:text="次数" />
+
+	<EditText
+	    android:id="@+id/num_edit"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/num_name"
+	    android:layout_alignParentTop="true"
+	    android:layout_toLeftOf="@+id/type_name"
+	    android:layout_toRightOf="@+id/num_name"
+	    android:textSize="14sp"
+	    android:ems="10" />
+
+	<TextView
+	    android:id="@+id/type_name"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:paddingTop="14dp"
+	    android:layout_alignParentTop="true"
+	    android:layout_centerHorizontal="true"
+	    android:textSize="18sp"
+	    android:text="笔录格式" />
+
+	<Spinner
+	    android:id="@+id/record_type"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/type_name"
+	    android:layout_alignParentTop="true"
+	    android:layout_toRightOf="@+id/type_name"
+	    android:ems="10" />
+	<TextView
+	    android:id="@+id/time_name"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:paddingTop="14dp"
+	    android:layout_below="@+id/num_name"
+	    android:layout_alignParentLeft="true"
+	    android:textSize="18sp"
+	    android:gravity="center_vertical"
+	    android:text="时间" />
+
+	<com.yhkj.jskf.forestpoliceproject.widget.DateAndTimeInputEditText
+	    android:id="@+id/time_start"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/time_name"
+	    android:layout_below="@+id/num_edit"
+	    android:layout_toLeftOf="@+id/to"
+	    android:layout_toRightOf="@+id/time_name"
+	    android:textSize="14sp"
+	    android:singleLine="true"
+	    android:paddingLeft="5dp"
+	    style="@style/alarm_edittext"
+	    android:gravity="bottom|left"
+	    android:ems="5" >
+
+    </com.yhkj.jskf.forestpoliceproject.widget.DateAndTimeInputEditText>
+
+	<TextView
+	    android:id="@+id/to"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/time_start"
+	    android:layout_centerHorizontal="true"
+	    android:paddingTop="14dp"
+	    android:textSize="18sp"
+	    android:gravity="center_vertical"
+	    android:text="至" />
+
+	<com.yhkj.jskf.forestpoliceproject.widget.DateAndTimeInputEditText
+	    android:id="@+id/time_stop"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/to"
+	    android:layout_below="@+id/record_type"
+	    android:layout_toRightOf="@+id/to"
+	    android:textSize="14sp"
+	    android:singleLine="true"
+	    android:paddingLeft="5dp"
+	    style="@style/alarm_edittext"
+	    android:gravity="bottom|left"
+	    android:ems="10" >
+	</com.yhkj.jskf.forestpoliceproject.widget.DateAndTimeInputEditText>
+
+	<TextView
+	    android:id="@+id/adr_name"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/time_name"
+	    android:paddingTop="14dp"
+	    android:textSize="18sp"
+	    android:text="地点" />
+
+	<EditText
+	    android:id="@+id/adr"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/adr_name"
+	    android:layout_alignLeft="@+id/time_start"
+	    android:layout_below="@+id/time_start"
+	    android:textSize="14sp"
+	    android:ems="10" />
+
+	<TextView
+	    android:id="@+id/ask"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:paddingTop="14dp"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/adr_name"
+	    android:textSize="18sp"
+	    android:text="询问人" />
+
+	<EditText
+	    android:id="@+id/ask_edit"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/ask"
+	    android:layout_below="@+id/adr"
+	    android:layout_toLeftOf="@+id/to"
+	    android:layout_toRightOf="@+id/ask"
+	    android:textSize="14sp"
+	    android:ems="10" />
+
+	<TextView
+	    android:id="@+id/unit"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:paddingTop="14dp"
+	    android:layout_below="@+id/adr"
+	    android:layout_toRightOf="@+id/ask_edit"
+	    android:textSize="18sp"
+	    android:text="工作单位" />
+
+	<EditText
+	    android:id="@+id/unit_edit"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/unit"
+	    android:layout_alignParentRight="true"
+	    android:layout_below="@+id/adr"
+	    android:layout_toRightOf="@+id/unit"
+	    android:textSize="14sp"
+	    android:ems="10" />
+
+	<TextView
+	    android:id="@+id/recorder"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:paddingTop="14dp"
+	    android:layout_below="@+id/ask"
+	    android:textSize="18sp"
+	    android:text="记录人" />
+
+	<EditText
+	    android:id="@+id/recorder_edit"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/recorder"
+	    android:layout_below="@+id/ask_edit"
+	    android:layout_toLeftOf="@+id/unit1"
+	    android:layout_toRightOf="@+id/recorder"
+	    android:textSize="14sp"
+	    android:ems="10" />
+
+	<TextView
+	    android:id="@+id/unit1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:paddingTop="14dp"
+	    android:layout_alignBottom="@+id/recorder"
+	    android:layout_alignLeft="@+id/unit"
+	    android:textSize="18sp"
+	    android:text="工作单位" />
+
+	<EditText
+	    android:id="@+id/unit1_edit"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/unit1"
+	    android:layout_alignLeft="@+id/unit_edit"
+	    android:layout_alignParentRight="true"
+	    android:layout_below="@+id/unit_edit"
+	    android:textSize="14sp"
+	    android:ems="10" />
+
+	<TextView
+	    android:id="@+id/to_recorder"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/recorder"
+	    android:paddingTop="14dp"
+	    android:textSize="18sp"
+	    android:text="被询问人" />
+
+	<EditText
+	    android:id="@+id/to_recorder_edit"
+	    android:layout_width="30dp"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/to_recorder"
+	    android:layout_alignRight="@+id/recorder_edit"
+	    android:layout_below="@+id/recorder_edit"
+	    android:layout_toRightOf="@+id/to_recorder"
+	    android:textSize="14sp"
+	    android:ems="10" />
+
+	<TextView
+	    android:id="@+id/old_name"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/to_recorder_edit"
+	    android:layout_toRightOf="@+id/to_recorder_edit"
+	    android:layout_alignLeft="@+id/unit1"
+	    android:textSize="18sp"
+	    android:text="曾用名" />
+
+	<EditText
+	    android:id="@+id/old_name_edit"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/old_name"
+	    android:layout_below="@+id/unit1"
+	    android:layout_toRightOf="@+id/old_name"
+	    android:textSize="14sp"
+	    android:ems="10" >
+	</EditText>
+
+	<TextView
+	    android:id="@+id/sex"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/to_recorder"
+	    android:paddingTop="14dp"
+	    android:textSize="18sp"
+	    android:text="性别" />
+
+	<Spinner
+	    android:id="@+id/sex_spinner"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/sex"
+	    android:layout_alignLeft="@+id/adr"
+	    android:layout_below="@+id/to_recorder"
+	    android:layout_toLeftOf="@+id/birthday"
+	    android:ems="10" />
+
+	<TextView
+	    android:id="@+id/birthday"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/sex"
+	    android:layout_alignBottom="@+id/sex"
+	    android:layout_alignRight="@+id/to_recorder_edit"
+	    android:textSize="18sp"
+	    android:text="出生日期" />
+
+	<com.yhkj.jskf.forestpoliceproject.widget.DateInputEditText
+	    android:id="@+id/birthday_edit"
+	    android:layout_width="100dp"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/sex_spinner"
+	    android:layout_alignLeft="@+id/old_name"
+	    android:layout_below="@+id/old_name"
+	    android:textSize="14sp"
+	    style="@style/alarm_edittext"
+	    android:gravity="bottom|left"
+	    android:ems="10" >
+
+	</com.yhkj.jskf.forestpoliceproject.widget.DateInputEditText>
+
+	<TextView
+	    android:id="@+id/education"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/birthday"
+	    android:layout_toRightOf="@+id/birthday_edit"
+	    android:textSize="18sp"
+	    android:text="文化程度" />
+
+	<Spinner
+	    android:id="@+id/education_spinner"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/sex_spinner"
+	    android:layout_below="@+id/old_name_edit"
+	    android:layout_toRightOf="@+id/education"
+	    android:ems="10" >
+	</Spinner>
+
+	<TextView
+	    android:id="@+id/age"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/sex"
+	    android:paddingTop="14dp"
+	    android:textSize="18sp"
+	    android:text="年龄" />
+
+	<EditText
+	    android:id="@+id/age_edit"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/age"
+	    android:layout_alignLeft="@+id/sex_spinner"
+	    android:layout_below="@+id/sex_spinner"
+	    android:layout_toLeftOf="@+id/birthday"
+	    android:textSize="14sp"
+	    android:ems="10" >
+	</EditText>
+
+	<TextView
+	    android:id="@+id/nationality"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:paddingTop="14dp"
+	    android:layout_alignBottom="@+id/age_edit"
+	    android:layout_alignLeft="@+id/birthday"
+	    android:textSize="18sp"
+	    android:text="国籍" />
+
+	<Spinner
+	    android:id="@+id/nationality_spinner"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/nationality"
+	    android:layout_alignTop="@+id/nationality"
+	    android:layout_toLeftOf="@+id/education"
+	    android:layout_toRightOf="@+id/nationality"
+	    android:ems="10" />
+
+	<TextView
+	    android:id="@+id/national"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:paddingTop="14dp"
+	    android:layout_alignBottom="@+id/nationality"
+	    android:layout_alignLeft="@+id/education"
+	    android:textSize="18sp"
+	    android:text="民族" />
+
+	<Spinner
+	    android:id="@+id/national_spinner"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/national"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignTop="@+id/national"
+	    android:layout_toRightOf="@+id/national"
+	    android:ems="10" />
+
+	<TextView
+	    android:id="@+id/number"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:paddingTop="14dp"
+	    android:layout_below="@+id/nationality_spinner"
+	    android:layout_alignLeft="@+id/birthday_edit"
+	    android:textSize="18sp"
+	    android:text="号码" />
+	<Spinner
+	    android:id="@+id/type"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/age"
+	    android:layout_alignBottom="@+id/number"
+	    android:layout_toLeftOf="@+id/birthday_edit"
+	    android:text="请选择证件类型" />
+	
+	<EditText
+	    android:id="@+id/number_edit"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/number"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignTop="@+id/number"
+	    android:layout_toRightOf="@+id/number"
+	    android:ems="10"
+	    android:textSize="14sp" />
+	
+	<TextView
+	    android:id="@+id/political"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:paddingTop="14dp"
+	    android:layout_below="@+id/type"
+	    android:textSize="18sp"
+	    android:text="政治面貌" />
+
+	<Spinner
+	    android:id="@+id/political_spinner"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/political"
+	    android:layout_alignLeft="@+id/to_recorder_edit"
+	    android:layout_below="@+id/type"
+	    android:layout_toLeftOf="@+id/birthday_edit"
+	    android:ems="10" />
+
+	<TextView
+	    android:id="@+id/call"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:paddingTop="14dp"
+	    android:layout_alignBottom="@+id/political"
+	    android:layout_alignLeft="@+id/birthday_edit"
+	    android:textSize="18sp"
+	    android:text="联系电话" />
+
+	<EditText
+	    android:id="@+id/call_edit"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/call"
+	    android:layout_alignTop="@+id/call"
+	    android:layout_toRightOf="@+id/call"
+	    android:ems="10"
+	    android:textSize="14sp" />
+
+	<TextView
+	    android:id="@+id/huji_adr"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:paddingTop="14dp"
+	    android:layout_below="@+id/political"
+	    android:textSize="18sp"
+	    android:text="户籍地址" />
+
+	<EditText
+	    android:id="@+id/huji_adr_edit"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/huji_adr"
+	    android:layout_alignParentRight="true"
+	    android:layout_below="@+id/political_spinner"
+	    android:layout_toRightOf="@+id/political"
+	    android:textSize="14sp"
+	    android:ems="10" />
+
+	<TextView
+	    android:id="@+id/current_adr"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:paddingTop="14dp"
+	    android:layout_below="@+id/huji_adr"
+	    android:textSize="18sp"
+	    android:text="现住址" />
+
+	<EditText
+	    android:id="@+id/current_adr_edit"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/current_adr"
+	    android:layout_alignLeft="@+id/recorder_edit"
+	    android:layout_alignParentRight="true"
+	    android:layout_below="@+id/huji_adr"
+	    android:textSize="14sp"
+	    android:ems="10" />
+
+	<TextView
+	    android:id="@+id/recorder_unit"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:paddingTop="14dp"
+	    android:layout_below="@+id/current_adr"
+	    android:textSize="18sp"
+	    android:text="工作单位" />
+
+	<EditText
+	    android:id="@+id/recorder_unit_edit"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/recorder_unit"
+	    android:layout_alignParentRight="true"
+	    android:layout_below="@+id/current_adr_edit"
+	    android:layout_toRightOf="@+id/recorder_unit"
+	    android:textSize="14sp"
+	    android:ems="10" />
+
+	
+	<Button
+	    android:id="@+id/btn"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentLeft="true"
+	    android:text="导出并查看" />
+	
+	
+	
+	
+	
+	<TextView
+	    android:id="@+id/lin_sex"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/to_recorder_edit"
+	    android:layout_alignLeft="@+id/unit1"
+	    android:paddingTop="14dp"
+	    android:textSize="18sp"
+	    android:visibility="gone"
+	    android:text="性别"
+	    />
+	<Spinner
+	    android:id="@+id/lin_sex_edit"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/lin_sex"
+	    android:layout_below="@+id/unit1"
+	    android:layout_toRightOf="@+id/lin_sex"
+	    android:visibility="gone"
+	    android:textSize="14sp"
+	    android:ems="10" />
+	<TextView
+	    android:id="@+id/lin_number"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/to_recorder"
+	    android:paddingTop="14dp"
+	    android:textSize="18sp"
+	    android:visibility="gone"
+	    android:text="身份证号码"
+	    />
+
+	<EditText
+	    android:id="@+id/lin_number_edit"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/lin_number"
+	    android:layout_below="@+id/to_recorder"
+	    android:layout_toRightOf="@+id/lin_number"
+	    android:ems="10"
+	    android:textSize="14sp"
+	    android:visibility="gone" />
+
+	<TextView
+	    android:id="@+id/lin_call"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/lin_number"
+	    android:paddingTop="14dp"
+	    android:text="联系电话"
+	    android:textSize="18sp"
+	    android:visibility="gone" />
+
+	<EditText
+	    android:id="@+id/lin_call_edit"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/lin_unit"
+	    android:layout_alignRight="@+id/to_recorder_edit"
+	    android:layout_below="@+id/lin_number"
+	    android:layout_toRightOf="@+id/lin_call"
+	    android:ems="10"
+	    android:textSize="14sp"
+	    android:visibility="gone" >
+
+	</EditText>
+
+	<TextView
+	    android:id="@+id/lin_unit"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/lin_sex"
+	    android:layout_below="@+id/lin_number_edit"
+	    android:paddingTop="14dp"
+	    android:text="工作单位"
+	    android:textSize="18sp"
+	    android:visibility="gone" />
+
+	<EditText
+	    android:id="@+id/lin_unit_edit"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@+id/lin_unit"
+	    android:layout_alignBottom="@+id/lin_unit"
+	    android:ems="10"
+	    android:textSize="14sp"
+	    android:visibility="gone" >
+	</EditText>
+
+	<TextView
+	    android:id="@+id/lin_adr"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/lin_unit_edit"
+	    android:paddingTop="14dp"
+	    android:text="住址"
+	    android:textSize="18sp"
+	    android:visibility="gone" />
+
+	<EditText
+	    android:id="@+id/lin_adr_edit"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/lin_adr"
+	    android:layout_toRightOf="@+id/lin_adr"
+	    android:ems="10"
+	    android:textSize="14sp"
+	    android:visibility="gone" >
+	</EditText>
+
+	<TextView
+	    android:id="@+id/lin_ask_unit"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/lin_adr_edit"
+	    android:paddingTop="14dp"
+	    android:text="执法单位"
+	    android:textSize="18sp"
+	    android:visibility="gone" />
+
+	<EditText
+	    android:id="@+id/lin_ask_unit_edit"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/lin_ask_unit"
+	    android:layout_alignLeft="@+id/lin_call_edit"
+	    android:layout_below="@+id/lin_adr"
+	    android:layout_toLeftOf="@+id/lin_unit"
+	    android:ems="10"
+	    android:textSize="14sp"
+	    android:visibility="gone" >
+
+	</EditText>
+
+	<TextView
+	    android:id="@+id/lin_shiyou"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/lin_unit"
+	    android:layout_alignTop="@+id/lin_ask_unit_edit"
+	    android:paddingTop="14dp"
+	    android:text="事由"
+	    android:textSize="18sp"
+	    android:visibility="gone" />
+
+	<EditText
+	    android:id="@+id/lin_shiyou_edit"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/lin_sex_edit"
+	    android:layout_alignBottom="@+id/lin_shiyou"
+	    android:ems="10"
+	    android:textSize="14sp"
+	    android:visibility="gone" >
+	</EditText>
+
+</RelativeLayout>

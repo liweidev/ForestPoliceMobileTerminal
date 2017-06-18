@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:fadingEdge="vertical"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="9dp" >
+
+        <EditText
+            android:id="@+id/etAlarm_FirstContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="@string/etAlarm_FirstContent"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:padding="5dp" >
+
+            <requestFocus />
+        </EditText>
+
+        <com.yhkj.jskf.forestpoliceproject.widget.DateAndTimeInputEditText
+            android:id="@+id/etFirst_endTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:hint="@string/etFirst_endTime"
+            android:inputType="datetime"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/etAlarm_Opinioness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="@string/Alarm_Opinion"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:padding="5dp" />
+
+        <com.yhkj.jskf.forestpoliceproject.widget.DateAndTimeInputEditText
+            android:id="@+id/etAlarm_OpinionTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:hint="@string/etAlarm_Time"
+            android:inputType="datetime"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/etAlarming_Situation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="@string/alarmingSituation"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/etAlarm_Responsible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="@string/Responsible"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:padding="5dp" />
+
+        <com.yhkj.jskf.forestpoliceproject.widget.DateAndTimeInputEditText
+            android:id="@+id/etAlarm_ResponsibleTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:hint="@string/etAlarmL_Time"
+            android:inputType="datetime"
+            android:padding="5dp" />
+    </LinearLayout>
+
+</ScrollView>

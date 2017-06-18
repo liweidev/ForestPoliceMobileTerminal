@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Medium Text"
+        android:ems="10"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvLogDate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Small Text"
+        android:textColor="@color/image_open_gray_pressed"
+        android:gravity="right"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</LinearLayout>

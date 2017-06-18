@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.yhkj.jskf.forestpoliceproject.PatrolRouteManagementActivity" >
+
+  <!--   <item
+        android:id="@+id/menu_route_save"
+        android:orderInCategory="100"
+        android:enabled="true"
+        android:title="@string/signature_save"
+        app:showAsAction="always"/>
+ -->
+</menu>

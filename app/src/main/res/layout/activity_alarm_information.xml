@@ -1,0 +1,235 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    tools:context="${packageName}.${activityClass}" >
+<ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/llcommit"
+    android:layout_marginBottom="5dip"
+    >
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:paddingRight="50dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView1"
+                style="@style/alarm_text"
+                android:textColor="@color/translucent_red"
+                android:text="@string/receivingAlarmTime" />
+
+            <com.yhkj.jskf.forestpoliceproject.widget.DateAndTimeInputEditText
+                android:id="@+id/datietAlarmInformationDate"
+                style="@style/alarm_edittext" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/alarm_text"
+                android:text="@string/sAlarmMode" />
+
+            <Spinner
+                android:id="@+id/sAlarmInformationMode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/alarm_text"
+                android:text="@string/alarmName" />
+
+            <EditText
+                android:id="@+id/etAlarmInformationName"
+                style="@style/alarm_edittext" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView4"
+                style="@style/alarm_text"
+                android:text="@string/alarm_age" />
+
+            <EditText
+                android:id="@+id/etAlarmInformationAge"
+                style="@style/alarm_edittext"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvAlarm_Sex"
+                style="@style/alarm_text"
+                android:text="@string/alarm_sex" />
+
+            <RadioGroup
+                android:id="@+id/rgAlarmInformationSex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rbAlarmBoy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:checked="true"
+                    android:text="@string/boy" />
+
+                <RadioButton
+                    android:id="@+id/rbAlarmGirl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/girl" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView6"
+                style="@style/alarm_text"
+                android:text="@string/alarm_nation" />
+
+            <Spinner
+                android:id="@+id/spAlarmInformationNation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView7"
+                style="@style/alarm_text"
+                android:text="@string/alarm_phone" />
+
+            <EditText
+                android:id="@+id/etAlarmInformationPhone"
+                style="@style/alarm_edittext"
+                android:inputType="number"
+                android:maxLength="11" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView8"
+                style="@style/alarm_text"
+                android:text="@string/alarm_id_card" />
+
+            <EditText
+                android:id="@+id/etAlarmInformationIDCard"
+                style="@style/alarm_edittext"
+                android:maxLength="18" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView9"
+                style="@style/alarm_text"
+                android:text="@string/alarm_address" />
+
+            <EditText
+                android:id="@+id/etAlarmInformationAdd"
+                style="@style/alarm_edittext" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView10"
+                style="@style/alarm_text"
+                android:textColor="@color/translucent_red"
+                android:text="@string/alarmContent" />
+
+            <EditText
+                android:id="@+id/etAlarmInformationContent"
+                style="@style/alarm_edittext_lines" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+    <LinearLayout
+        android:id="@id/llcommit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/submit_btn_bg"
+            android:padding="10dp"
+            android:text="@string/next"
+            android:textColor="@color/dialog_gray_default" />
+    </LinearLayout>
+
+</RelativeLayout>

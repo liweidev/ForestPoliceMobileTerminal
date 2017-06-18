@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.yhkj.jskf.forestpoliceproject.activity.patrol_route.PatrolRouteManagementActivity" >
+
+    <EditText
+        android:id="@+id/etPatrolRouteManagementName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/patrol_route_management_name"
+        android:inputType="textMultiLine"
+        android:padding="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lvPatrolRouteManagement"
+        android:layout_below="@+id/etPatrolRouteManagementName"
+        android:layout_marginTop="10dp" >
+
+        <Spinner
+            android:id="@+id/spPatrolRouteManagementTravelAdvice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Spinner
+            android:id="@+id/spPatrolRouteManagementType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ivBtnPatrolRouteManagementStartAndEnd"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/security_btn"
+        android:gravity="center" >
+
+        <TextView
+            style="@style/main_menu_text"
+            android:id="@+id/tvPatrolRouteManagementStartAndEnd"
+            android:text="@string/start" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lvPatrolRouteManagement"
+        android:layout_below="@+id/lvPatrolRouteManagement" 
+        android:layout_marginTop="10dp">
+
+        <Spinner
+            android:id="@+id/spPatrolRouteManagementRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Spinner
+            android:id="@+id/spPatrolRouteManagementWeather"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</RelativeLayout>

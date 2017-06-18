@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/head_bg"
+    android:padding="10dp"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tvTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/ivTitleIcon"
+        android:padding="5dp"
+        android:text="@string/app_name"
+        android:textColor="@color/head_text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <!-- <TextView
+        android:id="@+id/tvTitleReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_centerVertical="true"
+        android:padding="5dp"
+        android:background="@drawable/return_bg"
+        android:text="@string/recommend_back"
+        android:textColor="@color/head_text"
+        android:visibility="visible"
+        android:textAppearance="?android:attr/textAppearanceMedium" />  -->
+
+    <ImageView
+        android:id="@+id/ivTitleIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_launcher" />
+
+</RelativeLayout>

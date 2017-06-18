@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/village_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_bg"
+                android:ellipsize="end"
+                android:hint="@string/village_name"
+                android:padding="5dp"
+                android:singleLine="true" />
+
+            <!-- 行政区域总面积(公顷) -->
+
+            <EditText
+                android:id="@+id/allarea_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_bg"
+                android:hint="@string/allarea"
+                android:inputType="numberDecimal"
+                android:padding="5dp" />
+            <!-- 海拔 -->
+
+            <EditText
+                android:id="@+id/elevation_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_bg"
+                android:hint="@string/elevation"
+                android:padding="5dp" />
+            <!-- 地形地貌 -->
+
+            <EditText
+                android:id="@+id/terrain_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_bg"
+                android:hint="@string/terrain"
+                android:padding="5dp" />
+            <!-- 经纬度 -->
+
+            <EditText
+                android:id="@+id/coordinate_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_bg"
+                android:hint="@string/coordinate"
+                android:padding="5dp" />
+            <!-- 截然地区(四至) -->
+
+            <EditText
+                android:id="@+id/region_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_bg"
+                android:hint="@string/region"
+                android:padding="5dp" />
+            <!-- 河流湖泊位置 -->
+
+            <EditText
+                android:id="@+id/location_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_bg"
+                android:hint="@string/location"
+                android:padding="5dp" />
+            <!-- 矿产资源分布 -->
+
+            <Spinner
+                android:id="@+id/oreresources_sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:imeOptions="actionNext"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:spinnerMode="dialog" />
+            <!-- 地区特产 -->
+
+            <Spinner
+                android:id="@+id/specialty_sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:imeOptions="actionNext"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:spinnerMode="dialog" />
+            <!-- 交通道路分布 -->
+
+            <EditText
+                android:id="@+id/traffic_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_bg"
+                android:hint="@string/trafficroad"
+                android:padding="5dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
